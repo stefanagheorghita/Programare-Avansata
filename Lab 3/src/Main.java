@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +22,23 @@ public class Main {
         c.add(c3);
         Collections.sort(c);
         System.out.println(c);
+        List<Node> l = new ArrayList<>();
+        l.add(p1);
+        l.add(p2);
+        l.add(p4);
+        l.add(p3);
+        l.add(c1);
+        l.add(c2);
+        l.add(c3);
+        Collections.sort(l, new Comparator<Node>() {
+            @Override
+            public int compare(Node o1, Node o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
+
+        System.out.println(l);
+
+
     }
 }
