@@ -12,7 +12,6 @@ public class Person implements Node, java.lang.Comparable<Person> {
     private Map<Person, relationshipType> relationship = new HashMap<>();
     private Map<Company, employeeType> jobs = new HashMap<>();
 
-
     public Person(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs) {
         this.name = name;
         this.birthDate = birthDate;

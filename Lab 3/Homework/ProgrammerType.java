@@ -6,4 +6,3 @@ public enum ProgrammerType {
     BACK_END,
     FULL_STACK,
 }
-

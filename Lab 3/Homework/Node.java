@@ -3,3 +3,4 @@ public interface Node {
 
     int getNoRelationships();
 }
+

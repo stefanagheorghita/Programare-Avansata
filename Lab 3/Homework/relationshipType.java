@@ -7,4 +7,3 @@ public enum relationshipType {
     EMPLOYEE,
     NEIGHBOUR,
 }
-

@@ -16,7 +16,6 @@ public class Programmer extends Person {
         position = "Programmer";
     }
 
-
     public Programmer(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs, ProgrammerType type, int salary) {
         super(name, birthDate, relationship, jobs);
         this.type = type;

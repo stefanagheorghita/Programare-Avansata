@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class Company implements Node, java.lang.Comparable<Company> {
 
     private String name;
