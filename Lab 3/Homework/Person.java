@@ -8,7 +8,6 @@ public class Person implements Node, java.lang.Comparable<Person> {
 
     private String name;
 
-
     private LocalDate birthDate;
 
     private Map<Person, relationshipType> relationship = new HashMap<>();

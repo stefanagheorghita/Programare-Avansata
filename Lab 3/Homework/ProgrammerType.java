@@ -5,5 +5,4 @@ public enum ProgrammerType {
     FRONT_END,
     BACK_END,
     FULL_STACK,
-
 }

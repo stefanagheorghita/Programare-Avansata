@@ -7,7 +7,6 @@ public class Designer extends Person {
     private int maxClients;
 
 
-
     public Designer() {
         super();
     }
@@ -23,7 +22,6 @@ public class Designer extends Person {
         this.field = field;
         this.maxClients = maxClients;
     }
-
 
     public int getMaxClients() {
         return maxClients;

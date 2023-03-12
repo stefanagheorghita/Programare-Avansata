@@ -3,7 +3,6 @@ import java.util.Map;
 
 public class Company implements Node, java.lang.Comparable<Company> {
 
-
     private String name;
     private int noEmployees;
     Map<Person, employeeType> employee = new HashMap<>();
@@ -48,7 +47,7 @@ public class Company implements Node, java.lang.Comparable<Company> {
     @Override
     public String toString() {
         return "Company{" +
-                "name='" + name +'\'' + ", number of relationships=" + this.getNoRelationships() +
+                "name='" + name + '\'' + ", number of relationships=" + this.getNoRelationships() +
                 '}';
     }
 

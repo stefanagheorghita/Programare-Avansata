@@ -7,3 +7,4 @@ public enum DesignerType {
     UI,
     UX
 }
+

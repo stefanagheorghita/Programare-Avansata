@@ -6,21 +6,19 @@ public class Programmer extends Person {
     private int salary;
     private int workHours;
 
-
     private String position;
-
 
     public Programmer() {
     }
 
     public Programmer(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs) {
-        super(name, birthDate,relationship,jobs);
+        super(name, birthDate, relationship, jobs);
         position = "Programmer";
     }
 
 
-    public Programmer(String name, LocalDate birthDate,Map<Person,relationshipType> relationship, Map<Company, employeeType> jobs, ProgrammerType type, int salary) {
-        super(name, birthDate,relationship,jobs);
+    public Programmer(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs, ProgrammerType type, int salary) {
+        super(name, birthDate, relationship, jobs);
         this.type = type;
         this.salary = salary;
         position = "Programmer";

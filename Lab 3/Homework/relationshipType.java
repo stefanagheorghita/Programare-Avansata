@@ -4,7 +4,6 @@ public enum relationshipType {
     COLLEAGUE,
     BEST_FRIEND,
     BOSS,
-
     EMPLOYEE,
     NEIGHBOUR,
 }

@@ -12,7 +12,7 @@ public class Main {
         nodesList.add(p1);
         nodesList.add(p4);
         nodesList.add(p3);
-        // System.out.println(nodesList);
+
         Company c1 = new Company("Coco");
         Company c2 = new Company("Aro");
         Company c3 = new Company("Vivo");

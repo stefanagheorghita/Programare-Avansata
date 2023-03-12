@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Network {
     private List<Node> nodes = new ArrayList<>();
-
     public Network() {
     }
 
