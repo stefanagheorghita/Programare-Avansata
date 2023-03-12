@@ -3,5 +3,4 @@ public enum employeeType {
     DIRECTOR,
     MANAGER,
     PROJECT_LEAD
-
 }

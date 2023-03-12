@@ -48,5 +48,4 @@ public class Designer extends Person {
         this.salary = salary;
     }
 
-
 }

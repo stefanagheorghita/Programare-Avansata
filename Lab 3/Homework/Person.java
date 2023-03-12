@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class Person implements Node, java.lang.Comparable<Person> {
 
-
     private String name;
 
     private LocalDate birthDate;
