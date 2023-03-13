@@ -10,6 +10,7 @@ public class Network {
 
     public Network(List<Node> nodes) {
         this.nodes = nodes;
+        //verificare nod unic
         if (!verifyUnique()) {
             System.out.println("There are two different nodes with the same name in the network.");
             System.exit(2);

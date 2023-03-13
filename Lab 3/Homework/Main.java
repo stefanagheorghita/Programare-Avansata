@@ -48,7 +48,7 @@ public class Main {
         });
         System.out.println(nodesList);
         Network n = new Network(nodesList);
-
+        System.out.println("The importance of node p1: "+n.importance(p1));
 
         Collections.sort(n.getNodes(), new Comparator<Node>() {
             @Override
