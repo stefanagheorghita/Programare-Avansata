@@ -1,0 +1,3 @@
+-[x] Compulsory
+-[x] Homework
+-[ ] Bonus -incomplet al doilea subpunct
