@@ -1,4 +1,4 @@
-public enum relationshipType {
+public enum RelationshipType {
     FRIEND,
     FAMILY,
     COLLEAGUE,

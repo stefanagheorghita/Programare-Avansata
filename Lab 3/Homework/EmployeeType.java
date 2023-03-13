@@ -1,4 +1,4 @@
-public enum employeeType {
+public enum EmployeeType {
     INTERN,
     DIRECTOR,
     MANAGER,

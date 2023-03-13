@@ -5,7 +5,7 @@ public class Company implements Node, java.lang.Comparable<Company> {
 
     private String name;
     private int noEmployees;
-    Map<Person, employeeType> employee = new HashMap<>();
+    Map<Person, EmployeeType> employee = new HashMap<>();
 
     public Company() {
     }
@@ -32,11 +32,11 @@ public class Company implements Node, java.lang.Comparable<Company> {
         return noEmployees;
     }
 
-    public Map<Person, employeeType> getRelationship() {
+    public Map<Person, EmployeeType> getRelationship() {
         return employee;
     }
 
-    public void setRelationship(Map<Person, employeeType> employee) {
+    public void setRelationship(Map<Person, EmployeeType> employee) {
         this.employee = employee;
     }
 
@@ -55,7 +55,7 @@ public class Company implements Node, java.lang.Comparable<Company> {
         return employee.size();
     }
 
-    public void addRelationship(Person p, employeeType e) {
+    public void addRelationship(Person p, EmployeeType e) {
         employee.put(p, e);
         p.getJobs().put(this, e);
     }

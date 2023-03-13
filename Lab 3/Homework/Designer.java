@@ -11,12 +11,16 @@ public class Designer extends Person {
         super();
     }
 
-    public Designer(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs) {
+    public Designer(String name) {
+        super(name);
+    }
+
+    public Designer(String name, LocalDate birthDate, Map<Person, RelationshipType> relationship, Map<Company, EmployeeType> jobs) {
         super(name, birthDate, relationship, jobs);
     }
 
 
-    public Designer(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs, int salary, DesignerType field, int maxClients) {
+    public Designer(String name, LocalDate birthDate, Map<Person, RelationshipType> relationship, Map<Company, EmployeeType> jobs, int salary, DesignerType field, int maxClients) {
         super(name, birthDate, relationship, jobs);
         this.salary = salary;
         this.field = field;

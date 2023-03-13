@@ -1,13 +1,16 @@
+import java.time.LocalDate;
 import java.util.*;
 
 
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("Ana");
+        LocalDate dt = LocalDate.parse("2000-01-12");
+        Person p1 = new Designer("Ana");
         Person p2 = new Person("Ioan");
-        Person p3 = new Person("Ala");
+        Person p3 = new Programmer("Ala");
         Person p4 = new Person("Zana");
         List<Node> nodesList = new ArrayList<>();
+        p1.setBirthDate(dt);
 
         nodesList.add(p2);
         nodesList.add(p1);
@@ -24,11 +27,11 @@ public class Main {
         nodesList.add(c3);
         // System.out.println(nodesList);
 
-        relationshipType r1 = relationshipType.FRIEND;
-        relationshipType r2 = relationshipType.FAMILY;
-        employeeType e1 = employeeType.DIRECTOR;
-        employeeType e2 = employeeType.INTERN;
-        employeeType e3 = employeeType.MANAGER;
+        RelationshipType r1 = RelationshipType.FRIEND;
+        RelationshipType r2 = RelationshipType.FAMILY;
+        EmployeeType e1 = EmployeeType.DIRECTOR;
+        EmployeeType e2 = EmployeeType.INTERN;
+        EmployeeType e3 = EmployeeType.MANAGER;
 
         p1.addRelationship(p2, r1);
         p2.addRelationship(p3, r2);
@@ -50,7 +53,10 @@ public class Main {
         Collections.sort(n.getNodes(), new Comparator<Node>() {
             @Override
             public int compare(Node o1, Node o2) {
-                return o1.getNoRelationships() - o2.getNoRelationships();
+                if (o1.getNoRelationships() - o2.getNoRelationships() != 0)
+                    return o1.getNoRelationships() - o2.getNoRelationships();
+                else
+                    return o1.getName().compareTo(o2.getName());
             }
         });
         System.out.println(n);

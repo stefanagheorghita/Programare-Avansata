@@ -9,10 +9,10 @@ public class Person implements Node, java.lang.Comparable<Person> {
 
     private LocalDate birthDate;
 
-    private Map<Person, relationshipType> relationship = new HashMap<>();
-    private Map<Company, employeeType> jobs = new HashMap<>();
+    private Map<Person, RelationshipType> relationship = new HashMap<>();
+    private Map<Company, EmployeeType> jobs = new HashMap<>();
 
-    public Person(String name, LocalDate birthDate, Map<Person, relationshipType> relationship, Map<Company, employeeType> jobs) {
+    public Person(String name, LocalDate birthDate, Map<Person, RelationshipType> relationship, Map<Company, EmployeeType> jobs) {
         this.name = name;
         this.birthDate = birthDate;
         this.relationship = relationship;
@@ -57,19 +57,19 @@ public class Person implements Node, java.lang.Comparable<Person> {
                 '}';
     }
 
-    public Map<Person, relationshipType> getRelationship() {
+    public Map<Person, RelationshipType> getRelationship() {
         return relationship;
     }
 
-    public void setRelationship(Map<Person, relationshipType> relationship) {
+    public void setRelationship(Map<Person, RelationshipType> relationship) {
         this.relationship = relationship;
     }
 
-    public Map<Company, employeeType> getJobs() {
+    public Map<Company, EmployeeType> getJobs() {
         return jobs;
     }
 
-    public void setJobs(Map<Company, employeeType> jobs) {
+    public void setJobs(Map<Company, EmployeeType> jobs) {
         this.jobs = jobs;
     }
 
@@ -77,15 +77,15 @@ public class Person implements Node, java.lang.Comparable<Person> {
         return jobs.size() + relationship.size();
     }
 
-    public void addRelationship(Person node, relationshipType r) {
+    public void addRelationship(Person node, RelationshipType r) {
         relationship.put(node, r);
-        if (Objects.equals(r, relationshipType.BOSS))
-            node.getRelationship().put(this, relationshipType.EMPLOYEE);
+        if (Objects.equals(r, RelationshipType.BOSS))
+            node.getRelationship().put(this, RelationshipType.EMPLOYEE);
         else
             node.getRelationship().put(this, r);
     }
 
-    public void addCompany(Company node, employeeType e) {
+    public void addCompany(Company node, EmployeeType e) {
         jobs.put(node, e);
         node.getRelationship().put(this, e);
     }
