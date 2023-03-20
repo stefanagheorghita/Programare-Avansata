@@ -18,3 +18,8 @@ Lab 3:
 
 Lab 4:
 -[x] Compulsory
+-[x] Homework
+
+
+Lab 5:
+-[x] Compulsory
