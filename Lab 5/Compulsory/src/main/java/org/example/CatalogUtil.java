@@ -18,6 +18,7 @@ public class CatalogUtil {
             objectMapper.writeValue(
                     new File(path),
                     catalog);
+            System.out.println("saved");
         } catch (IOException e) {
             throw new InvalidPathsException("Unable to find path.");
         }
@@ -31,6 +32,7 @@ public class CatalogUtil {
             catalog = objectMapper.readValue(
                     new File(path),
                     Catalog.class);
+            System.out.println("loaded");
             return catalog;
         } catch (IOException e) {
 
