@@ -1,0 +1,5 @@
+[Company{name='C1', number of relationships=3}, Company{name='C2', number of relationships=2}, Company{name='C3', number of relationships=1}, Person{name='P1', number of relationships=3}, Person{name='P2', number of relationships=2}, Person{name='P3', number of relationships=0}, Person{name='P4', number of relationships=3}]
+The importance of node p1: 3
+Network{nodes=[Person{name='P3', number of relationships=0}, Company{name='C3', number of relationships=1}, Company{name='C2', number of relationships=2}, Person{name='P2', number of relationships=2}, Company{name='C1', number of relationships=3}, Person{name='P1', number of relationships=3}, Person{name='P4', number of relationships=3}]}
+[Company{name='C1', number of relationships=3}, Person{name='P2', number of relationships=2}]
+{0=[Company{name='C1', number of relationships=3}, Company{name='C3', number of relationships=1}, Person{name='P2', number of relationships=2}], 1=[Person{name='P1', number of relationships=3}, Company{name='C1', number of relationships=3}, Person{name='P1', number of relationships=3}]}
