@@ -67,17 +67,6 @@ public class DrawingPanel extends JPanel {
     }
 
     private void drawLines() {
-        int radius = 5; // radius of the circles
-        graphics.setColor(Color.white);
-
-        for (int i = 0; i < numVertices; i++) {
-
-            graphics.fillOval(x[i] - radius, y[i] - radius, 2 * radius, 2 * radius);
-        }
-    }
-
-    private void drawVertices() {
-
         graphics.setColor(Color.cyan);
 
 
@@ -94,6 +83,20 @@ public class DrawingPanel extends JPanel {
                 }
             }
         }
+    }
+
+
+    private void drawVertices() {
+
+        int radius = 5; // radius of the circles
+        graphics.setColor(Color.white);
+
+        for (int i = 0; i < numVertices; i++) {
+
+            graphics.fillOval(x[i] - radius, y[i] - radius, 2 * radius, 2 * radius);
+        }
+
+
     }
 
 
