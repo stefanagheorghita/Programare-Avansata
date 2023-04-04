@@ -1,0 +1,58 @@
+Optimus Prime: Start position: 2 0
+Wall-E: Start position: 1 2
+R2D2: Start position: 1 2
+Optimus Prime:Successfully visited cell (2, 0)
+Wall-E:Successfully visited cell (1, 2)
+Optimus Prime:Successfully visited cell (1, 1)
+Wall-E:Cell (1, 2) has already been visited
+R2D2:Cell (1, 2) has already been visited
+R2D2:Successfully visited cell (0, 2)
+Optimus Prime:Cell (2, 0) has already been visited
+Wall-E:Successfully visited cell (0, 1)
+R2D2:Cell (1, 1) has already been visited
+R2D2:Cell (0, 1) has already been visited
+Optimus Prime:Successfully visited cell (0, 0)
+Wall-E:Cell (0, 1) has already been visited
+Optimus Prime:Cell (0, 1) has already been visited
+R2D2:Cell (1, 2) has already been visited
+Wall-E:Successfully visited cell (1, 0)
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (0, 1) has already been visited
+R2D2:Cell (1, 2) has already been visited
+Optimus Prime:Cell (1, 1) has already been visited
+Wall-E:Cell (1, 1) has already been visited
+R2D2:Cell (0, 2) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (0, 0) has already been visited
+R2D2:Cell (0, 2) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Successfully visited cell (2, 1)
+R2D2:Cell (1, 1) has already been visited
+Wall-E:Cell (2, 0) has already been visited
+Optimus Prime:Cell (0, 0) has already been visited
+R2D2:Cell (0, 2) has already been visited
+Optimus Prime:Cell (0, 0) has already been visited
+Wall-E:Cell (2, 0) has already been visited
+R2D2:Cell (0, 1) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (1, 1) has already been visited
+R2D2:Cell (1, 1) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (2, 1) has already been visited
+R2D2:Cell (0, 1) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (1, 0) has already been visited
+R2D2:Cell (1, 1) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Cell (1, 1) has already been visited
+R2D2:Cell (0, 2) has already been visited
+Optimus Prime:Cell (1, 0) has already been visited
+Wall-E:Successfully visited cell (2, 2)
+R2D2:Cell (1, 2) has already been visited
+Optimus Prime:Cell (0, 1) has already been visited
+Wall-E:Cell (1, 1) has already been visited
+R2D2 M-am oprit.
+Optimus Prime M-am oprit.
+Wall-E M-am oprit.
+
+Process finished with exit code 0

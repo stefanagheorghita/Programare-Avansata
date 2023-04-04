@@ -23,8 +23,12 @@ public class Robot implements Runnable {
 
     public void run() {
         start();
-        System.out.println(this.name + ": Start position: " + initialX + " " + initialY);
+
         while (running) {
+            if (!CellsToVisit()) {
+                running = false;
+                break;
+            }
             Random random = new Random();
 
 //           int row= random.nextInt(explore.getMap().getMatrix().length);
@@ -33,13 +37,13 @@ public class Robot implements Runnable {
             if (initialX == 0)
                 row = random.nextInt(initialX, initialX + 2);
             else if (initialX == explore.getMap().getMatrix().length - 1)
-                row = random.nextInt(initialX - 1, initialX+1);
+                row = random.nextInt(initialX - 1, initialX + 1);
             else
                 row = random.nextInt(initialX - 1, initialX + 2);
             if (initialY == 0)
                 col = random.nextInt(initialY, initialY + 2);
             else if (initialY == explore.getMap().getMatrix()[1].length - 1)
-                col = random.nextInt(initialY - 1, initialY+1);
+                col = random.nextInt(initialY - 1, initialY + 1);
             else
                 col = random.nextInt(initialY - 1, initialY + 2);
             if (explore.getMap().visit(row, col, this)) {
@@ -54,8 +58,29 @@ public class Robot implements Runnable {
             }
 
         }
+        System.out.println(this.name + " M-am oprit.");
+
     }
 
+    private boolean CellsToVisit() {
+        int row, col;
+        for (int i = -1; i <= 1; i++)
+            for (int j = -1; j <= 1; j++) {
+                row = initialX + i;
+                col = initialY + j;
+                if (isValid(row, col)) {
+                    return true;
+                }
+            }
+        return false;
+    }
+
+    public boolean isValid(int row, int col) {
+        if (row < 0 || row > explore.getMap().getMatrix().length - 1 || col < 0 || col > explore.getMap().getMatrix().length - 1)
+            return false;
+        return explore.getMap().getMatrix()[row][col].isVisited();
+
+    }
 
     public List<Token> extractTokens(int number) {
         return explore.getMem().extractTokens(number);
@@ -86,6 +111,7 @@ public class Robot implements Runnable {
             initialX = random.nextInt(explore.getMap().getMatrix().length);
             initialY = random.nextInt(explore.getMap().getMatrix()[1].length);
         }
-        explore.getMap().getMatrix()[initialX][initialY].setVisited(true);
+        System.out.println(this.name + ": Start position: " + initialX + " " + initialY);
+        explore.getMap().visit(initialX, initialY, this);
     }
 }
