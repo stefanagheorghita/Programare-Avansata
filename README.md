@@ -29,3 +29,8 @@ Lab 5:
 
 Lab 6:
 -[x] Compulsory
+-[x] Homework
+
+
+Lab 7:
+-[x] Compulsory
