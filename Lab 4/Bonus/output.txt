@@ -1,0 +1,7 @@
+[Student{name='Ariel Satterfield'}, Student{name='Austin Upton'}, Student{name='Elly Oberbrunner IV'}, Student{name='Gema Hayes DDS'}, Student{name='Susannah Zboncak'}]
+[Project{name='bat'}, Project{name='bee'}, Project{name='llama'}, Project{name='mosquito'}, Project{name='sea lion'}, Project{name='zebra'}]
+Student{name='Austin Upton'}=[Project{name='bee'}, Project{name='llama'}]
+Student{name='Elly Oberbrunner IV'}=[Project{name='llama'}]
+Student{name='Gema Hayes DDS'}=[Project{name='zebra'}]
+Student{name='Susannah Zboncak'}=[Project{name='mosquito'}]
+Solve{solution={Student{name='Austin Upton'}=Project{name='bee'}, Student{name='Elly Oberbrunner IV'}=Project{name='llama'}, Student{name='Gema Hayes DDS'}=Project{name='zebra'}, Student{name='Ariel Satterfield'}=Project{name='sea lion'}, Student{name='Susannah Zboncak'}=Project{name='mosquito'}}}
