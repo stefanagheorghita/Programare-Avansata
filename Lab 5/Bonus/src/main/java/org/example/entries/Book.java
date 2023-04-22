@@ -3,7 +3,7 @@ package org.example.entries;
 import java.util.Map;
 
 public class Book extends Document {
-    static int x=1;
+    static int x=0;
     public Book() {
         this.id= String.valueOf("book"+ x);
         x++;

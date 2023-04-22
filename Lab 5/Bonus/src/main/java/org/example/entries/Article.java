@@ -5,7 +5,7 @@ import java.util.Random;
 
 
 public class Article extends Document {
-    static int x = 1;
+    static int x = 0;
     public Article() {
 
 

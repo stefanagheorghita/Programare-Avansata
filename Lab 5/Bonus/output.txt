@@ -1,0 +1,25 @@
+Instanta 2000 documente:
+Graph4J: 
+Greedy: Memory increase: -130645296 Running time: 128
+JGraphT:
+Greedy: Memory increase: 11210784 Running time: 64
+
+Instanta 24 documente:
+Graph4J:
+Greedy: Memory increase: 1046528 Running time: 11
+Brown: Memory increase: 0 Running time: 8914
+Brown: Memory increase: 0 Running time: 172
+JGraphT:
+Greedy: Memory increase: 0 Running time: 6
+
+Instanta 20 documente:
+Graph4J: 
+Greedy: Memory increase: 0 Running time: 10 - nr=4
+Brown: Memory increase: 0 Running time: 13 - nr=4
+Greedy: Memory increase: 1045488 Running time: 15 - nr=6
+Brown: Memory increase: 0 Running time: 461 - nr=6
+JGraphT:
+Greedy: Memory increase: 0 Running time: 7 - nr=4
+Brown: Memory increase: 0 Running time: 229 - nr=4
+Greedy: Memory increase: 0 Running time: 6 - nr=6
+Brown: Memory increase: 0 Running time: 14693 - nr=6

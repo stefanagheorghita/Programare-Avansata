@@ -19,7 +19,7 @@ public class ReportCommand implements Command {
     public ReportCommand(Catalog catalog) {
         this.catalog = catalog;
         cfg = new Configuration(Configuration.VERSION_2_3_31);
-        cfg.setClassLoaderForTemplateLoading(getClass().getClassLoader(), "/templates/");
+        cfg.setClassLoaderForTemplateLoading(getClass().getClassLoader(), "/templates");
     }
 
     @Override
