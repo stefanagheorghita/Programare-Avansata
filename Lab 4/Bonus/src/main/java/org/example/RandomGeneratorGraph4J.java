@@ -15,7 +15,7 @@ public class RandomGeneratorGraph4J {
     public Problem pb;
 
     RandomGeneratorGraph4J() {
-        RandomGnpBipartiteGenerator gen = new RandomGnpBipartiteGenerator(600, 200, 0.5);
+        RandomGnpBipartiteGenerator gen = new RandomGnpBipartiteGenerator(800, 200, 0.3);
         graph = gen.createGraph();
         System.out.println(graph);
         pb = new Problem();
@@ -24,7 +24,7 @@ public class RandomGeneratorGraph4J {
     public void createProblem() {
 
         Faker faker = new Faker();
-        var students = IntStream.rangeClosed(0, 599)
+        var students = IntStream.rangeClosed(0, 799)
                 .mapToObj(i -> new Student(faker.name().name()))
                 .toList();
 
@@ -41,7 +41,7 @@ public class RandomGeneratorGraph4J {
             List<Project> pref = new ArrayList<>();
             for (Edge e : graph.edges()) {
                 if (e.source() == studentList.indexOf(s))
-                    pref.add(projects.get(e.target()-600));
+                    pref.add(projects.get(e.target()-799));
             }
             pb.newKey(s, pref);
         }

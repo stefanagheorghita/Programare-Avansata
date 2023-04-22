@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
 public class RandomGeneratorJGraphT {
 
     public Problem pb= new Problem();
-    public int numStudents = 600;
+    public int numStudents = 800;
     public int numProjects = 200;
     private Graph<Node, DefaultEdge> graph= new SimpleGraph<>(DefaultEdge.class);
 
@@ -25,7 +25,7 @@ public class RandomGeneratorJGraphT {
 
     RandomGeneratorJGraphT(){
 
-        double edgeProbability = 0.5;
+        double edgeProbability = 0.3;
 
         // Create the two sets of vertices
         Set<Student> students = new HashSet<>();
