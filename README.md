@@ -26,6 +26,7 @@ Lab 4:
 Lab 5:
 -[x] Compulsory
 -[x] Homework
+-[x] Bonus
 
 
 Lab 6:
