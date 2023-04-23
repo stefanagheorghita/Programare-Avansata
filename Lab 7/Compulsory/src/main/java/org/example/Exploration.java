@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exploration {
-    private final SharedMemory mem = new SharedMemory(3);
-    private final ExplorationMap map = new ExplorationMap(3);
+    private final SharedMemory mem;
+    private final ExplorationMap map;
     private final List<Robot> robots = new ArrayList<>();
 
+    public Exploration(int n) {
+        mem=new SharedMemory(n);
+        map=new ExplorationMap(n);
+    }
 
     public void start() {
         for (Robot robot : robots) {

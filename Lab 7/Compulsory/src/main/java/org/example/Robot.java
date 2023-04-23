@@ -30,9 +30,6 @@ public class Robot implements Runnable {
                 break;
             }
             Random random = new Random();
-
-//           int row= random.nextInt(explore.getMap().getMatrix().length);
-//           int col= random.nextInt(explore.getMap().getMatrix()[1].length);
             int row, col;
             if (initialX == 0)
                 row = random.nextInt(initialX, initialX + 2);
@@ -76,9 +73,10 @@ public class Robot implements Runnable {
     }
 
     public boolean isValid(int row, int col) {
-        if (row < 0 || row > explore.getMap().getMatrix().length - 1 || col < 0 || col > explore.getMap().getMatrix().length - 1)
+        Cell[][] matrix = explore.getMap().getMatrix();
+        if (row < 0 || row > matrix.length - 1 || col < 0 || col > matrix.length - 1)
             return false;
-        return explore.getMap().getMatrix()[row][col].isVisited();
+        return !matrix[row][col].isVisited();
 
     }
 
@@ -105,11 +103,12 @@ public class Robot implements Runnable {
 
     private void start() {
         Random random = new Random();
-        initialX = random.nextInt(explore.getMap().getMatrix().length);
-        initialY = random.nextInt(explore.getMap().getMatrix()[1].length);
+        int dimension=explore.getMap().getMatrix().length;
+        initialX = random.nextInt(dimension);
+        initialY = random.nextInt(dimension);
         while (explore.getMap().getMatrix()[initialX][initialY].isVisited()) {
-            initialX = random.nextInt(explore.getMap().getMatrix().length);
-            initialY = random.nextInt(explore.getMap().getMatrix()[1].length);
+            initialX = random.nextInt(dimension);
+            initialY = random.nextInt(dimension);
         }
         System.out.println(this.name + ": Start position: " + initialX + " " + initialY);
         explore.getMap().visit(initialX, initialY, this);

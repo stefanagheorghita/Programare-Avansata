@@ -30,12 +30,11 @@ public class ExplorationMap {
             robot.setRunning(false);
         synchronized (matrix[row][col]) {
             if (!matrix[row][col].isVisited()) {
-                List<Token> tokens = robot.extractTokens(3);
+                List<Token> tokens = robot.extractTokens(matrix.length);
                 matrix[row][col].setTokens(tokens);
                 matrix[row][col].setVisited(true);
                 numVisitedCells++;
                 System.out.println(robot.getName()+":Successfully visited cell (" + row + ", " + col + ")");
-
                 return true;
             } else {
                 System.out.println(robot.getName()+":Cell (" + row + ", " + col + ") has already been visited");
