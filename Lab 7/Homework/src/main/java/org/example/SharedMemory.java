@@ -8,7 +8,7 @@ import java.util.Random;
 public class SharedMemory {
     private final List<Token> tokens=new ArrayList<>();
     public SharedMemory(int n) {
-        for(int i=1;i<n*n*n;i++)
+        for(int i=1;i<=n*n*n;i++)
             tokens.add(new Token(i));
         Collections.shuffle(tokens);
 
