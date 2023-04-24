@@ -36,3 +36,7 @@ Lab 6:
 
 Lab 7:
 -[x] Compulsory
+-[x] Homework
+
+Lab 8:
+-[x] Compulsory
