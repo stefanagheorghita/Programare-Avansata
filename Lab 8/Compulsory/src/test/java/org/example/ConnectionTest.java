@@ -1,12 +1,18 @@
 package org.example;
-
 import org.example.DAO.AlbumDAO;
 import org.example.DAO.ArtistDAO;
 import org.example.DAO.GenreDAO;
+import org.junit.Test;
+
 import java.sql.SQLException;
 
-public class Main {
-    public static void main(String args[]) {
+public class ConnectionTest {
+
+    public ConnectionTest(){
+
+    }
+    @Test
+    public void testConnection(){
         try {
             var artists = new ArtistDAO();
             artists.create("Pink Floyd");
@@ -35,6 +41,7 @@ public class Main {
             System.err.println(e);
             Database.rollback();
         }
-
     }
+
 }
+

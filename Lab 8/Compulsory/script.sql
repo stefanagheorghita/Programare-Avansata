@@ -9,7 +9,7 @@ CREATE TABLE albums (
 
 CREATE TABLE artists (
   id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(20) NOT NULL,
+  name VARCHAR(20) NOT NULL unique,
   PRIMARY KEY (id)
 );
 
@@ -27,3 +27,6 @@ CREATE TABLE album_genre (
   FOREIGN KEY (album_id) REFERENCES albums(id),
   FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
+
+drop table album_genre;
+drop table artists;
