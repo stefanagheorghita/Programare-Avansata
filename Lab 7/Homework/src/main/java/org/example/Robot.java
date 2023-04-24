@@ -91,7 +91,7 @@ public class Robot implements Runnable {
                 }
             }
         }
-       // System.out.println(this.name + " extracted " + numberOfTokens + " tokens.");
+        System.out.println(this.name + " extracted " + numberOfTokens + " tokens.");
         System.out.println(this.name + " M-am oprit.");
     }
 

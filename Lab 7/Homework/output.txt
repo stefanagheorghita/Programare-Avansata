@@ -1,58 +1,72 @@
-Optimus Prime: Start position: 2 0
-Wall-E: Start position: 1 2
-R2D2: Start position: 1 2
-Optimus Prime:Successfully visited cell (2, 0)
-Wall-E:Successfully visited cell (1, 2)
-Optimus Prime:Successfully visited cell (1, 1)
-Wall-E:Cell (1, 2) has already been visited
-R2D2:Cell (1, 2) has already been visited
-R2D2:Successfully visited cell (0, 2)
-Optimus Prime:Cell (2, 0) has already been visited
-Wall-E:Successfully visited cell (0, 1)
-R2D2:Cell (1, 1) has already been visited
-R2D2:Cell (0, 1) has already been visited
-Optimus Prime:Successfully visited cell (0, 0)
-Wall-E:Cell (0, 1) has already been visited
-Optimus Prime:Cell (0, 1) has already been visited
-R2D2:Cell (1, 2) has already been visited
-Wall-E:Successfully visited cell (1, 0)
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Cell (0, 1) has already been visited
-R2D2:Cell (1, 2) has already been visited
-Optimus Prime:Cell (1, 1) has already been visited
-Wall-E:Cell (1, 1) has already been visited
-R2D2:Cell (0, 2) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Cell (0, 0) has already been visited
-R2D2:Cell (0, 2) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Successfully visited cell (2, 1)
-R2D2:Cell (1, 1) has already been visited
-Wall-E:Cell (2, 0) has already been visited
-Optimus Prime:Cell (0, 0) has already been visited
-R2D2:Cell (0, 2) has already been visited
-Optimus Prime:Cell (0, 0) has already been visited
-Wall-E:Cell (2, 0) has already been visited
-R2D2:Cell (0, 1) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Cell (1, 1) has already been visited
-R2D2:Cell (1, 1) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Cell (2, 1) has already been visited
-R2D2:Cell (0, 1) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
+"C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar=58708:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\user\Documents\AN2 SEM 2\PA\Lab 7\Homework\target\classes" org.example.Main
+
+Pentru matrice 3*3:
+Time elapsed: 0 seconds
+R2D2: Start position: 1 0
+Wall-E: Start position: 1 0
+R2D2:Successfully visited cell (1, 0)
+R2D2:Successfully visited cell (1, 1)
 Wall-E:Cell (1, 0) has already been visited
-R2D2:Cell (1, 1) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Cell (1, 1) has already been visited
-R2D2:Cell (0, 2) has already been visited
-Optimus Prime:Cell (1, 0) has already been visited
-Wall-E:Successfully visited cell (2, 2)
-R2D2:Cell (1, 2) has already been visited
-Optimus Prime:Cell (0, 1) has already been visited
-Wall-E:Cell (1, 1) has already been visited
-R2D2 M-am oprit.
+Optimus Prime: Start position: 2 2
+Wall-E:Successfully visited cell (0, 1)
+Optimus Prime:Successfully visited cell (2, 2)
+Optimus Prime:Successfully visited cell (1, 2)
+Wall-E:Successfully visited cell (0, 0)
+Optimus Prime:Successfully visited cell (2, 1)
+R2D2:Successfully visited cell (2, 0)
+Time elapsed: 1 seconds
+All cells have been visited
+Wall-E M-am oprit.
 Optimus Prime M-am oprit.
+R2D2 M-am oprit.
+Wall-E has extracted 6 tokens
+R2D2 has extracted 9 tokens
+Optimus Prime has extracted 9 tokens
+
+Process finished with exit code 0
+
+
+
+/////////////////////////////////////
+
+
+
+Time elapsed: 0 seconds
+Wall-E: Start position: 1 1
+R2D2: Start position: 2 1
+Optimus Prime: Start position: 2 2
+Optimus Prime:Successfully visited cell (2, 2)
+R2D2:Successfully visited cell (2, 1)
+Wall-E:Successfully visited cell (1, 1)
+Optimus Prime:Successfully visited cell (1, 2)
+R2D2:Successfully visited cell (1, 0)
+Wall-E:Successfully visited cell (0, 1)
+Time elapsed: 1 seconds
+R2D2:Successfully visited cell (2, 0)
+Wall-E:Successfully visited cell (0, 2)
+Optimus Prime:Successfully visited cell (1, 3)
+Time elapsed: 2 seconds
+Wall-E:Successfully visited cell (0, 3)
+R2D2:Successfully visited cell (3, 1)
+Optimus Prime:Successfully visited cell (2, 3)
+p Wall-E 3
+Wall-E is paused
+Time elapsed: 3 seconds
+R2D2:Successfully visited cell (3, 2)
+Optimus Prime:Successfully visited cell (3, 3)
+Time elapsed: 4 seconds
+R2D2 extracted 15 tokens.
+R2D2 M-am oprit.
+Optimus Prime extracted 15 tokens.
+Optimus Prime M-am oprit.
+Time elapsed: 5 seconds
+Wall-E is resumed
+Wall-E extracted 12 tokens.
 Wall-E M-am oprit.
 
 Process finished with exit code 0
+
+
+
+
+

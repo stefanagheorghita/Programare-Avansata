@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -28,26 +29,27 @@ public class Exploration {
             t.start();
         }
 
-        while(true){
-            if(verify()){
-                System.out.println("All cells have been visited");
-                for(Robot robot : robots)
-                {
-                    System.out.println(robot.getName() + " has extracted " + robot.getNumberOfTokens() + " tokens");
-                }
-                System.exit(0);
-            }
 
-        }
+//        while(true){
+//            if(verify()){
+//                System.out.println("All cells have been visited");
+//                for(Robot robot : robots)
+//                {
+//                    System.out.println(robot.getName() + " has extracted " + robot.getNumberOfTokens() + " tokens");
+//                }
+//                System.exit(0);
+//            }
+//
+//        }
 
 
     }
 
     private boolean verify() {
-        for(Robot robot : robots)
-            if(robot.isRunning() == true)
+        for (Robot robot : robots)
+            if (robot.isRunning() == true)
                 return map.getNumVisitedCells() == map.getMatrix().length * map.getMatrix()[0].length || !timekeeperThread.isAlive();
-            return true;
+        return true;
 
     }
 
