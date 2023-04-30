@@ -2,6 +2,7 @@ package org.example.DAO;
 
 import org.example.ConnectionPool;
 import org.example.Database;
+import org.example.model.Artist;
 import org.example.model.Genre;
 
 import java.sql.*;
@@ -36,7 +37,7 @@ public class GenreDAO {
         }
     }
 
-    public Integer findByName(String name) throws SQLException {
+    public Genre findByName(String name) throws SQLException {
         // Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
         PreparedStatement stmt = null;
@@ -45,7 +46,10 @@ public class GenreDAO {
             stmt = con.prepareStatement("select * from genres where name=?");
             stmt.setString(1, name);
             rs = stmt.executeQuery();
-            return rs.next() ? rs.getInt(1) : null;
+            if (rs.next())
+                return new Genre(rs.getInt(1), name);
+            else
+                return null;
         } finally {
             if (rs != null) {
                 try {
@@ -68,13 +72,16 @@ public class GenreDAO {
         }
     }
 
-    public String findById(int id) throws SQLException {
+    public Genre findById(int id) throws SQLException {
         //  Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
-                     "select name from genres where id=" + id)) {
-            return rs.next() ? rs.getString(1) : null;
+                     "select * from genres where id=" + id)) {
+            if (rs.next())
+                return new Genre(id, rs.getString(2));
+            else
+                return null;
         }
     }
 

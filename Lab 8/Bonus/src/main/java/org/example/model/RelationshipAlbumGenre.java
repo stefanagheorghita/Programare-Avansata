@@ -2,21 +2,21 @@ package org.example.model;
 
 public class RelationshipAlbumGenre {
     private int id;
-    private int albumId;
-    private int genreId;
+    private Album album;
+    private Genre genre;
 
-    public RelationshipAlbumGenre(int id, int albumId, int genreId) {
+    public RelationshipAlbumGenre(int id, Album album, Genre genre) {
         this.id = id;
-        this.albumId = albumId;
-        this.genreId = genreId;
+        this.album = album;
+        this.genre = genre;
     }
 
     @Override
     public String toString() {
         return "RelationshipAlbumGenre{" +
                 "id=" + id +
-                ", albumId=" + albumId +
-                ", genreId=" + genreId +
+                ", album=" + album +
+                ", genre=" + genre +
                 '}';
     }
 }
