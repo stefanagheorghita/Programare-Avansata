@@ -1,12 +1,504 @@
-Albums:
-Finding the albums with the name-The Wall: [Album{id=1, title='The Wall', artist='Pink Floyd', releaseYear=1979, genres=[Rock]}]
-Finding the albums with the name-Thriller: [Album{id=2, title='Thriller', artist='Michael Jackson', releaseYear=1982, genres=[Funk, Soul, Pop]}]
-All the albums: [Album{id=1, title='The Wall', artist='Pink Floyd', releaseYear=1979, genres=[Rock]}, Album{id=2, title='Thriller', artist='Michael Jackson', releaseYear=1982, genres=[Funk, Soul, Pop]}]
-Artists:
-Finding the artists with the id-1: Pink Floyd
-Finding the artists with the name-Michael Jackson: 2
-All the artists: [Artist{id=1, name='Pink Floyd'}, Artist{id=2, name='Michael Jackson'}]
-All the genres:[Genre{id=2, name='Funk'}, Genre{id=4, name='Pop'}, Genre{id=1, name='Rock'}, Genre{id=3, name='Soul'}]
+"C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar=55333:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\user\Documents\AN2 SEM 2\PA\Lab 8\Optional\target\classes;C:\Users\user\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\user\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-dbcp2\2.9.0\commons-dbcp2-2.9.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-pool2\2.10.0\commons-pool2-2.10.0.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\user\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\user\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar" org.example.ExtractDataset
+Album Sgt. Pepper's Lonely Hearts Club Band added to the database
+Album Pet Sounds added to the database
+Album Revolver added to the database
+Album Highway 61 Revisited added to the database
+Album Rubber Soul added to the database
+Album What's Going On added to the database
+Album Exile on Main St. added to the database
+Album London Calling added to the database
+Album Blonde on Blonde added to the database
+Album The Beatles ("The White Album") added to the database
+Album The Sun Sessions added to the database
+Album Kind of Blue added to the database
+Album The Velvet Underground & Nico added to the database
+Album Abbey Road added to the database
+Album Are You Experienced added to the database
+Album Blood on the Tracks added to the database
+Album Nevermind added to the database
+Album Born to Run added to the database
+Album Astral Weeks added to the database
+Album Thriller added to the database
+Album The Great Twenty_Eight added to the database
+Album The Complete Recordings added to the database
+Album John Lennon/Plastic Ono Band added to the database
+Album Innervisions added to the database
+Album Live at the Apollo, 1962 added to the database
+Album Rumours added to the database
+Album The Joshua Tree added to the database
+Album Who's Next added to the database
+Album Led Zeppelin added to the database
+Album Blue added to the database
+Album Bringing It All Back Home added to the database
+Album Let It Bleed added to the database
+Album Ramones added to the database
+Album Music From Big Pink added to the database
+Album The Rise and Fall of Ziggy Stardust and the Spiders From Mars added to the database
+Album Tapestry added to the database
+Album Hotel California added to the database
+Album The Anthology added to the database
+Album Please Please Me added to the database
+Album Forever Changes added to the database
+Album Never Mind the Bollocks Here's the Sex Pistols added to the database
+Album The Doors added to the database
+Album The Dark Side of the Moon added to the database
+Album Horses added to the database
+Album The Band ("The Brown Album") added to the database
+Album Legend: The Best of Bob Marley and The Wailers added to the database
+Album A Love Supreme added to the database
+Album It Takes a Nation of Millions to Hold Us Back added to the database
+Album At Fillmore East added to the database
+Album Here's Little Richard added to the database
+Album Bridge Over Troubled Water added to the database
+Album Greatest Hits added to the database
+Album Meet The Beatles! added to the database
+Album The Birth of Soul added to the database
+Album Electric Ladyland added to the database
+Album Elvis Presley added to the database
+Album Songs in the Key of Life added to the database
+Album Beggars Banquet added to the database
+Album Chronicle: The 20 Greatest Hits added to the database
+Album Trout Mask Replica added to the database
+Album Greatest Hits added to the database
+Album Appetite for Destruction added to the database
+Album Achtung Baby added to the database
+Album Sticky Fingers added to the database
+Album Back to Mono (1958-1969) added to the database
+Album Moondance added to the database
+Album Kid A added to the database
+Album Off the Wall added to the database
+Album [Led Zeppelin IV] added to the database
+Album The Stranger added to the database
+Album Graceland added to the database
+Album Superfly added to the database
+Album Physical Graffiti added to the database
+Album After the Gold Rush added to the database
+Album Star Time added to the database
+Album Purple Rain added to the database
+Album Back in Black added to the database
+Album Otis Blue: Otis Redding Sings Soul added to the database
+Album Led Zeppelin II added to the database
+Album Imagine added to the database
+Album The Clash added to the database
+Album Harvest added to the database
+Album Axis: Bold as Love added to the database
+Album I Never Loved a Man the Way I Love You added to the database
+Album Lady Soul added to the database
+Album Born in the U.S.A. added to the database
+Album The Wall added to the database
+Album At Folsom Prison added to the database
+Album Dusty in Memphis added to the database
+Album Talking Book added to the database
+Album Goodbye Yellow Brick Road added to the database
+Album 20 Golden Greats added to the database
+Album Sign "Peace" the Times added to the database
+Album 40 Greatest Hits added to the database
+Album Bitches Brew added to the database
+Album Tommy added to the database
+Album The Freewheelin' Bob Dylan added to the database
+Album This Year's Model added to the database
+Album There's a Riot Goin' On added to the database
+Album Odessey and Oracle added to the database
+Album In the Wee Small Hours added to the database
+Album Fresh Cream added to the database
+Album Giant Steps added to the database
+Album Sweet Baby James added to the database
+Album Modern Sounds in Country and Western Music added to the database
+Album Rocket to Russia added to the database
+Album Portrait of a Legend 1951-1964 added to the database
+Album Hunky Dory added to the database
+Album Aftermath added to the database
+Album Loaded added to the database
+Album The Bends added to the database
+Album If You Can Believe Your Eyes and Ears added to the database
+Album Court and Spark added to the database
+Album Disraeli Gears added to the database
+Album The Who Sell Out added to the database
+Album Out of Our Heads added to the database
+Album Layla and Other Assorted Love Songs added to the database
+Album Late Registration added to the database
+Album At Last! added to the database
+Album Sweetheart of the Rodeo added to the database
+Album Stand! added to the database
+Album The Harder They Come added to the database
+Album Raising Hell added to the database
+Album Moby Grape added to the database
+Album Pearl added to the database
+Album Catch a Fire added to the database
+Album Younger Than Yesterday added to the database
+Album Raw Power added to the database
+Album Remain in Light added to the database
+Album Marquee Moon added to the database
+Album Paranoid added to the database
+Album Saturday Night Fever: The Original Movie Sound Track added to the database
+Album The Wild, the Innocent & the E Street Shuffle added to the database
+Album Ready to Die added to the database
+Album Slanted and Enchanted added to the database
+Album Greatest Hits added to the database
+Album Tim added to the database
+Album The Chronic added to the database
+Album Rejuvenation added to the database
+Album Parallel Lines added to the database
+Album Live at the Regal added to the database
+Album A Christmas Gift for You From Phil Spector added to the database
+Album Gris-Gris added to the database
+Album Straight Outta Compton added to the database
+Album Aja added to the database
+Album Surrealistic Pillow added to the database
+Album Deja vu added to the database
+Album Houses of the Holy added to the database
+Album Santana added to the database
+Album Darkness on the Edge of Town added to the database
+Album Funeral added to the database
+Album The B 52's / Play Loud added to the database
+Album The Low End Theory added to the database
+Album Moanin' in the Moonlight added to the database
+Album Pretenders added to the database
+Album Paul's Boutique added to the database
+Album Closer added to the database
+Album Captain Fantastic and the Brown Dirt Cowboy added to the database
+Album Alive! added to the database
+Album Electric Warrior added to the database
+Album The Dock of the Bay added to the database
+Album OK Computer added to the database
+Album 1999 added to the database
+Album The Very Best of Linda Ronstadt added to the database
+Album Let's Get It On added to the database
+Album Imperial Bedroom added to the database
+Album Master of Puppets added to the database
+Album My Aim Is True added to the database
+Album Exodus added to the database
+Album Live at Leeds added to the database
+Album The Notorious Byrd Brothers added to the database
+Album Every Picture Tells a Story added to the database
+Album Something/Anything? added to the database
+Album Desire added to the database
+Album Close to You added to the database
+Album Rocks added to the database
+Album One Nation Under a Groove added to the database
+Album The Anthology: 1961-1977 added to the database
+Album The Definitive Collection added to the database
+Album The Rolling Stones, Now! added to the database
+Album Natty Dread added to the database
+Album Fleetwood Mac added to the database
+Album Red Headed Stranger added to the database
+Album The Immaculate Collection added to the database
+Album The Stooges added to the database
+Album Fresh added to the database
+Album So added to the database
+Album Buffalo Springfield Again added to the database
+Album Happy Trails added to the database
+Album From Elvis in Memphis added to the database
+Album Fun House added to the database
+Album The Gilded Palace of Sin added to the database
+Album Dookie added to the database
+Album Transformer added to the database
+Album Blues Breakers With Eric Clapton ("The Beano Album") added to the database
+Album Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968 added to the database
+Album Murmur added to the database
+Album The Best of Little Walter added to the database
+Album Is This It added to the database
+Album Highway to Hell added to the database
+Album The Downward Spiral added to the database
+Album Parsley, Sage, Rosemary and Thyme added to the database
+Album Bad added to the database
+Album Modern Times added to the database
+Album Wheels of Fire added to the database
+Album Dirty Mind added to the database
+Album Abraxas added to the database
+Album Tea for the Tillerman added to the database
+Album Ten added to the database
+Album Everybody Knows This Is Nowhere added to the database
+Album Wish You Were Here added to the database
+Album Crooked Rain Crooked Rain added to the database
+Album Tattoo You added to the database
+Album Proud Mary: The Best of Ike and Tina Turner added to the database
+Album New York Dolls added to the database
+Album Bo Diddley / Go Bo Diddley added to the database
+Album Two Steps From the Blues added to the database
+Album The Queen Is Dead added to the database
+Album Licensed to Ill added to the database
+Album Look-Ka Py Py added to the database
+Album Loveless added to the database
+Album New Orleans Piano added to the database
+Album War added to the database
+Album The Neil Diamond Collection added to the database
+Album American Idiot added to the database
+Album Nebraska added to the database
+Album Doolittle added to the database
+Album Paid in Full added to the database
+Album Toys in the Attic added to the database
+Album Nick of Time added to the database
+Album A Night at the Opera added to the database
+Album The Kink Kronikles added to the database
+Album Mr. Tambourine Man added to the database
+Album Bookends added to the database
+Album The Ultimate Collection added to the database
+Album Mr. Excitement! added to the database
+Album My Generation added to the database
+Album Howlin' Wolf added to the database
+Album Like a Prayer added to the database
+Album Can't Buy a Thrill added to the database
+Album Let It Be added to the database
+Album Run D.M.C. added to the database
+Album Black Sabbath added to the database
+Album The Marshall Mathers LP added to the database
+Album All Killer No Filler! The Jerry Lee Lewis Anthology added to the database
+Album Freak Out! added to the database
+Album Live/Dead added to the database
+Album The Shape of Jazz to Come added to the database
+Album Automatic for the People added to the database
+Album Reasonable Doubt added to the database
+Album Low added to the database
+Album The Blueprint added to the database
+Album The River added to the database
+Album Complete & Unbelievable: The Otis Redding Dictionary of Soul added to the database
+Album Metallica ("The Black Album") added to the database
+Album Trans Europa Express added to the database
+Album Whitney Houston added to the database
+Album The Kinks Are The Village Green Preservation Society added to the database
+Album The Velvet Rope added to the database
+Album Stardust added to the database
+Album American Beauty added to the database
+Album Crosby, Stills & Nash added to the database
+Album Tracy Chapman added to the database
+Album Workingman's Dead added to the database
+Album The Genius of Ray Charles added to the database
+Album Child Is Father to the Man added to the database
+Album Quadrophenia added to the database
+Album Paul Simon added to the database
+Album Psychocandy added to the database
+Album Some Girls added to the database
+Album The Beach Boys Today! added to the database
+Album Dig Me Out added to the database
+Album Going to a Go-Go added to the database
+Album Nightbirds added to the database
+Album The Slim Shady LP added to the database
+Album Mothership Connection added to the database
+Album Rhythm Nation 1814 added to the database
+Album Anthology of American Folk Music added to the database
+Album Aladdin Sane added to the database
+Album All That You Can't Leave Behind added to the database
+Album My Life added to the database
+Album Folk Singer added to the database
+Album Can't Get Enough added to the database
+Album The Cars added to the database
+Album Music of My Mind added to the database
+Album I'm Still in Love With You added to the database
+Album Los Angeles added to the database
+Album Anthem of the Sun added to the database
+Album Something Else by The Kinks added to the database
+Album Call Me added to the database
+Album Talking Heads: 77 added to the database
+Album The Basement Tapes added to the database
+Album White Light/White Heat added to the database
+Album Kick Out the Jams added to the database
+Album Songs of Love and Hate added to the database
+Album Meat Is Murder added to the database
+Album We're Only in It for the Money added to the database
+Album The College Dropout added to the database
+Album Weezer (Blue Album) added to the database
+Album Master of Reality added to the database
+Album Coat of Many Colors added to the database
+Album Fear of a Black Planet added to the database
+Album John Wesley Harding added to the database
+Album Grace added to the database
+Album Car Wheels on a Gravel Road added to the database
+Album Odelay added to the database
+Album A Hard Day's Night added to the database
+Album Songs for Swingin' Lovers! added to the database
+Album Willy and the Poor Boys added to the database
+Album Blood Sugar Sex Magik added to the database
+Album The Sun Records Collection added to the database
+Album Nothing's Shocking added to the database
+Album MTV Unplugged in New York added to the database
+Album The Miseducation of Lauryn Hill added to the database
+Album Damn the Torpedoes added to the database
+Album The Velvet Underground added to the database
+Album Surfer Rosa added to the database
+Album Back Stabbers added to the database
+Album Burnin' added to the database
+Album Amnesiac added to the database
+Album Pink Moon added to the database
+Album Sail Away added to the database
+Album Ghost in the Machine added to the database
+Album Station to Station added to the database
+Album Slowhand added to the database
+Album Disintegration added to the database
+Album Exile in Guyville added to the database
+Album Daydream Nation added to the database
+Album In the Jungle Groove added to the database
+Album Tonight's the Night added to the database
+Album Help! added to the database
+Album Shoot Out the Lights added to the database
+Album Wild Gift added to the database
+Album Squeezing Out Sparks added to the database
+Album Superunknown added to the database
+Album In Rainbows added to the database
+Album Aqualung added to the database
+Album Cheap Thrills added to the database
+Album The Heart of Saturday Night added to the database
+Album Damaged added to the database
+Album Play added to the database
+Album Violator added to the database
+Album Bat Out of Hell added to the database
+Album Berlin added to the database
+Album Stop Making Sense added to the database
+Album 3 Feet High and Rising added to the database
+Album The Piper at the Gates of Dawn added to the database
+Album Muddy Waters at Newport 1960 added to the database
+Album The Black Album added to the database
+Album Roger the Engineer added to the database
+Album Rust Never Sleeps added to the database
+Album Brothers in Arms added to the database
+Album My Beautiful Dark Twisted Fantasy added to the database
+Album 52nd Street added to the database
+Album Having a Rave Up added to the database
+Album 12 Songs added to the database
+Album Between the Buttons added to the database
+Album Sketches of Spain added to the database
+Album Honky Ch�teau added to the database
+Album Singles Going Steady added to the database
+Album Stankonia added to the database
+Album Siamese Dream added to the database
+Album Substance 1987 added to the database
+Album L.A. Woman added to the database
+Album Rage Against the Machine added to the database
+Album American Recordings added to the database
+Album Ray of Light added to the database
+Album Eagles added to the database
+Album Louder Than Bombs added to the database
+Album Mott added to the database
+Album Whatever People Say I Am, That's What I'm Not added to the database
+Album Reggatta de Blanc added to the database
+Album Volunteers added to the database
+Album Siren added to the database
+Album Late for the Sky added to the database
+Album Post added to the database
+Album The Ultimate Collection: 1948-1990 added to the database
+Album (What's the Story) Morning Glory? added to the database
+Album CrazySexyCool added to the database
+Album Funky Kingston added to the database
+Album The Smile Sessions added to the database
+Album The Modern Lovers added to the database
+Album More Songs About Buildings and Food added to the database
+Album A Quick One added to the database
+Album "Love and Theft" added to the database
+Album Pretzel Logic added to the database
+Album Enter the Wu_Tang: 36 Chambers added to the database
+Album The Indestructible Beat of Soweto added to the database
+Album The End of the Innocence added to the database
+Album Elephant added to the database
+Album The Pretender added to the database
+Album Let It Be added to the database
+Album Kala added to the database
+Album Good Old Boys added to the database
+Album Sound of Silver added to the database
+Album For Your Pleasure added to the database
+Album Blue Lines added to the database
+Album Eliminator added to the database
+Album Rain Dogs added to the database
+Album Anthology: The Best of The Temptations added to the database
+Album Californication added to the database
+Album Illmatic added to the database
+Album (pronounced 'leh-'nerd 'skin-'nerd) added to the database
+Album Dr. John's Gumbo added to the database
+Album Radio City added to the database
+Album Rid of Me added to the database
+Album Sandinista! added to the database
+Album I Do Not Want What I Haven't Got added to the database
+Album Strange Days added to the database
+Album Time Out of Mind added to the database
+Album 461 Ocean Boulevard added to the database
+Album Pink Flag added to the database
+Album Double Nickels on the Dime added to the database
+Album Beauty and the Beat added to the database
+Album Van Halen added to the database
+Album Mule Variations added to the database
+Album Boy added to the database
+Album Band on the Run added to the database
+Album Dummy added to the database
+Album The "Chirping" Crickets added to the database
+Album The Best of the Girl Groups, Volume 1 added to the database
+Album Presenting the Fabulous Ronettes Featuring Veronica added to the database
+Album Anthology added to the database
+Album The Rising added to the database
+Album Grievous Angel added to the database
+Album Cheap Trick at Budokan added to the database
+Album Sleepless added to the database
+Album Outlandos d'Amour added to the database
+Album Another Green World added to the database
+Album Vampire Weekend added to the database
+Album Stories From the City, Stories From the Sea added to the database
+Album Here Come the Warm Jets added to the database
+Album All Things Must Pass added to the database
+Album #1 Record added to the database
+Album In Utero added to the database
+Album Sea Change added to the database
+Album Tha Carter III added to the database
+Album Boys Don't Cry added to the database
+Album Live at the Harlem Square Club, 1963 added to the database
+Album Rum Sodomy & the Lash added to the database
+Album Suicide added to the database
+Album Q: Are We Not Men? A: We Are Devo! added to the database
+Album In Color added to the database
+Album The World Is a Ghetto added to the database
+Album Fly Like an Eagle added to the database
+Album Back in the USA added to the database
+Album Getz / Gilberto added to the database
+Album Synchronicity added to the database
+Album Third/Sister Lovers added to the database
+Album For Everyman added to the database
+Album Back to Black added to the database
+Album John Prine added to the database
+Album Strictly Business added to the database
+Album Love It to Death added to the database
+Album How Will the Wolf Survive? added to the database
+Album Here, My Dear added to the database
+Album Z added to the database
+Album Tumbleweed Connection added to the database
+Album The Drifters' Golden Hits added to the database
+Album Live Through This added to the database
+Album Metal Box added to the database
+Album Document added to the database
+Album Heaven Up Here added to the database
+Album Hysteria added to the database
+Album 69 Love Songs added to the database
+Album A Rush of Blood to the Head added to the database
+Album Tunnel of Love added to the database
+Album The Paul Butterfield Blues Band added to the database
+Album The Score added to the database
+Album Radio added to the database
+Album I Want to See the Bright Lights Tonight added to the database
+Album Faith added to the database
+Album The Smiths added to the database
+Album Proxima estacion: Esperanza added to the database
+Album Armed Forces added to the database
+Album Life After Death added to the database
+Album Down Every Road added to the database
+Album All Time Greatest Hits added to the database
+Album Maggot Brain added to the database
+Album Only Built 4 Cuban Linx added to the database
+Album Voodoo added to the database
+Album Guitar Town added to the database
+Album Entertainment! added to the database
+Album All the Young Dudes added to the database
+Album Vitalogy added to the database
+Album That's the Way of the World added to the database
+Album She's So Unusual added to the database
+Album New Day Rising added to the database
+Album Destroyer added to the database
+Album Tres hombres added to the database
+Album Born Under a Bad Sign added to the database
+Album Touch added to the database
+Album Yankee Hotel Foxtrot added to the database
+Album Oracular Spectacular added to the database
+Album Give It Up added to the database
+Album Boz Scaggs added to the database
+Album White Blood Cells added to the database
+Album The Stone Roses added to the database
+Album Live in Cook County Jail added to the database
+Album Aquemini added to the database
+All the albums: [Album{id=1, title='Sgt. Pepper's Lonely Hearts Club Band', artist='The Beatles', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=2, title='Pet Sounds', artist='The Beach Boys', releaseYear=1966, genres=[Genre{id=1, name='Rock'}]}, Album{id=3, title='Revolver', artist='The Beatles', releaseYear=1966, genres=[Genre{id=1, name='Rock'}]}, Album{id=4, title='Highway 61 Revisited', artist='Bob Dylan', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=5, title='Rubber Soul', artist='The Beatles', releaseYear=1965, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=6, title='What's Going On', artist='Marvin Gaye', releaseYear=1971, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=7, title='Exile on Main St.', artist='The Rolling Stones', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=8, title='London Calling', artist='The Clash', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=9, title='Blonde on Blonde', artist='Bob Dylan', releaseYear=1966, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=10, title='The Beatles ("The White Album")', artist='The Beatles', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=11, title='The Sun Sessions', artist='Elvis Presley', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=12, title='Kind of Blue', artist='Miles Davis', releaseYear=1959, genres=[Genre{id=5, name='Jazz'}]}, Album{id=13, title='The Velvet Underground & Nico', artist='The Velvet Underground', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=14, title='Abbey Road', artist='The Beatles', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=15, title='Are You Experienced', artist='The Jimi Hendrix Experience', releaseYear=1967, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=16, title='Blood on the Tracks', artist='Bob Dylan', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=17, title='Nevermind', artist='Nirvana', releaseYear=1991, genres=[Genre{id=1, name='Rock'}]}, Album{id=18, title='Born to Run', artist='Bruce Springsteen', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=19, title='Astral Weeks', artist='Van Morrison', releaseYear=1968, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}, Genre{id=65, name=' Blues'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=20, title='Thriller', artist='Michael Jackson', releaseYear=1982, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=21, title='The Great Twenty_Eight', artist='Chuck Berry', releaseYear=1982, genres=[Genre{id=1, name='Rock'}]}, Album{id=22, title='The Complete Recordings', artist='Robert Johnson', releaseYear=1990, genres=[Genre{id=8, name='Blues'}]}, Album{id=23, title='John Lennon/Plastic Ono Band', artist='John Lennon / Plastic Ono Band', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=24, title='Innervisions', artist='Stevie Wonder', releaseYear=1973, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=25, title='Live at the Apollo, 1962', artist='James Brown', releaseYear=1963, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=26, title='Rumours', artist='Fleetwood Mac', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=27, title='The Joshua Tree', artist='U2', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=28, title='Who's Next', artist='The Who', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=29, title='Led Zeppelin', artist='Led Zeppelin', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=30, title='Blue', artist='Joni Mitchell', releaseYear=1971, genres=[Genre{id=9, name='Pop'}]}, Album{id=31, title='Bringing It All Back Home', artist='Bob Dylan', releaseYear=1965, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=32, title='Let It Bleed', artist='The Rolling Stones', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=33, title='Ramones', artist='Ramones', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=34, title='Music From Big Pink', artist='The Band', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=35, title='The Rise and Fall of Ziggy Stardust and the Spiders From Mars', artist='David Bowie', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=36, title='Tapestry', artist='Carole King', releaseYear=1971, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=37, title='Hotel California', artist='Eagles', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=38, title='The Anthology', artist='Muddy Waters', releaseYear=2001, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=39, title='Please Please Me', artist='The Beatles', releaseYear=1963, genres=[Genre{id=1, name='Rock'}]}, Album{id=40, title='Forever Changes', artist='Love', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=41, title='Never Mind the Bollocks Here's the Sex Pistols', artist='Sex Pistols', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=42, title='The Doors', artist='The Doors', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=43, title='The Dark Side of the Moon', artist='Pink Floyd', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=44, title='Horses', artist='Patti Smith', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=45, title='The Band ("The Brown Album")', artist='The Band', releaseYear=1969, genres=[Genre{id=71, name='Classical'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=46, title='Legend: The Best of Bob Marley and The Wailers', artist='Bob Marley & The Wailers', releaseYear=1984, genres=[Genre{id=13, name='Reggae'}]}, Album{id=47, title='A Love Supreme', artist='John Coltrane', releaseYear=1965, genres=[Genre{id=5, name='Jazz'}]}, Album{id=48, title='It Takes a Nation of Millions to Hold Us Back', artist='Public Enemy', releaseYear=1988, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=49, title='At Fillmore East', artist='The Allman Brothers Band', releaseYear=1971, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=50, title='Here's Little Richard', artist='Little Richard', releaseYear=1957, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=51, title='Bridge Over Troubled Water', artist='Simon & Garfunkel', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=52, title='Greatest Hits', artist='Al Green', releaseYear=1975, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=53, title='Meet The Beatles!', artist='The Beatles', releaseYear=1964, genres=[Genre{id=1, name='Rock'}]}, Album{id=54, title='The Birth of Soul', artist='Ray Charles', releaseYear=1991, genres=[Genre{id=5, name='Jazz'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=55, title='Electric Ladyland', artist='The Jimi Hendrix Experience', releaseYear=1968, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=56, title='Elvis Presley', artist='Elvis Presley', releaseYear=1956, genres=[Genre{id=1, name='Rock'}]}, Album{id=57, title='Songs in the Key of Life', artist='Stevie Wonder', releaseYear=1976, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=58, title='Beggars Banquet', artist='The Rolling Stones', releaseYear=1968, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=59, title='Chronicle: The 20 Greatest Hits', artist='Creedence Clearwater Revival', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=60, title='Trout Mask Replica', artist='Captain Beefheart & His Magic Band', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=61, title='Greatest Hits', artist='Sly & The Family Stone', releaseYear=1970, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=62, title='Appetite for Destruction', artist='Guns N' Roses', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=63, title='Achtung Baby', artist='U2', releaseYear=1991, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=64, title='Sticky Fingers', artist='The Rolling Stones', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=65, title='Back to Mono (1958-1969)', artist='Phil Spector', releaseYear=1991, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=66, title='Moondance', artist='Van Morrison', releaseYear=1970, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=67, title='Kid A', artist='Radiohead', releaseYear=2000, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=68, title='Off the Wall', artist='Michael Jackson', releaseYear=1979, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=69, title='[Led Zeppelin IV]', artist='Led Zeppelin', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=70, title='The Stranger', artist='Billy Joel', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=71, title='Graceland', artist='Paul Simon', releaseYear=1986, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=72, title='Superfly', artist='Curtis Mayfield', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=73, title='Physical Graffiti', artist='Led Zeppelin', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=74, title='After the Gold Rush', artist='Neil Young', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=75, title='Star Time', artist='James Brown', releaseYear=1991, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=76, title='Purple Rain', artist='Prince and the Revolution', releaseYear=1984, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=77, title='Back in Black', artist='AC/DC', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=78, title='Otis Blue: Otis Redding Sings Soul', artist='Otis Redding', releaseYear=1965, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=79, title='Led Zeppelin II', artist='Led Zeppelin', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=80, title='Imagine', artist='John Lennon', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=81, title='The Clash', artist='The Clash', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=82, title='Harvest', artist='Neil Young', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=83, title='Axis: Bold as Love', artist='The Jimi Hendrix Experience', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=84, title='I Never Loved a Man the Way I Love You', artist='Aretha Franklin', releaseYear=1967, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=85, title='Lady Soul', artist='Aretha Franklin', releaseYear=1968, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=86, title='Born in the U.S.A.', artist='Bruce Springsteen', releaseYear=1984, genres=[Genre{id=1, name='Rock'}]}, Album{id=87, title='The Wall', artist='Pink Floyd', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=88, title='At Folsom Prison', artist='Johnny Cash', releaseYear=1968, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=89, title='Dusty in Memphis', artist='Dusty Springfield', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=90, title='Talking Book', artist='Stevie Wonder', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=91, title='Goodbye Yellow Brick Road', artist='Elton John', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=92, title='20 Golden Greats', artist='Buddy Holly', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=93, title='Sign "Peace" the Times', artist='Prince', releaseYear=1987, genres=[Genre{id=1, name='Rock'}, Genre{id=74, name=' Reggae'}]}, Album{id=94, title='40 Greatest Hits', artist='Hank Williams', releaseYear=1984, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=95, title='Bitches Brew', artist='Miles Davis', releaseYear=1970, genres=[Genre{id=5, name='Jazz'}]}, Album{id=96, title='Tommy', artist='The Who', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=97, title='The Freewheelin' Bob Dylan', artist='Bob Dylan', releaseYear=1963, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=98, title='This Year's Model', artist='Elvis Costello', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=99, title='There's a Riot Goin' On', artist='Sly & The Family Stone', releaseYear=1971, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=100, title='Odessey and Oracle', artist='The Zombies', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=101, title='In the Wee Small Hours', artist='Frank Sinatra', releaseYear=1955, genres=[Genre{id=5, name='Jazz'}, Genre{id=64, name=' Pop'}]}, Album{id=102, title='Fresh Cream', artist='Cream', releaseYear=1966, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=103, title='Giant Steps', artist='John Coltrane', releaseYear=1959, genres=[Genre{id=5, name='Jazz'}]}, Album{id=104, title='Sweet Baby James', artist='James Taylor', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=105, title='Modern Sounds in Country and Western Music', artist='Ray Charles', releaseYear=1962, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=106, title='Rocket to Russia', artist='Ramones', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=107, title='Portrait of a Legend 1951-1964', artist='Sam Cooke', releaseYear=2003, genres=[Genre{id=75, name='Latin'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=108, title='Hunky Dory', artist='David Bowie', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=109, title='Aftermath', artist='The Rolling Stones', releaseYear=1966, genres=[Genre{id=1, name='Rock'}]}, Album{id=110, title='Loaded', artist='The Velvet Underground', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=111, title='The Bends', artist='Radiohead', releaseYear=1995, genres=[Genre{id=1, name='Rock'}]}, Album{id=112, title='If You Can Believe Your Eyes and Ears', artist='The Mamas and the Papas', releaseYear=1966, genres=[Genre{id=1, name='Rock'}]}, Album{id=113, title='Court and Spark', artist='Joni Mitchell', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=114, title='Disraeli Gears', artist='Cream', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=115, title='The Who Sell Out', artist='The Who', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=116, title='Out of Our Heads', artist='The Rolling Stones', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=117, title='Layla and Other Assorted Love Songs', artist='Derek and the Dominos', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=118, title='Late Registration', artist='Kanye West', releaseYear=2005, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=119, title='At Last!', artist='Etta James', releaseYear=1960, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=120, title='Sweetheart of the Rodeo', artist='The Byrds', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=121, title='Stand!', artist='Sly & The Family Stone', releaseYear=1969, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=122, title='The Harder They Come', artist='Various Artists', releaseYear=1972, genres=[Genre{id=13, name='Reggae'}, Genre{id=76, name='�Pop'}, Genre{id=77, name='�Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}, Genre{id=78, name='�Stage & Screen'}]}, Album{id=123, title='Raising Hell', artist='Run D.M.C.', releaseYear=1986, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=124, title='Moby Grape', artist='Moby Grape', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=125, title='Pearl', artist='Janis Joplin', releaseYear=1971, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=126, title='Catch a Fire', artist='The Wailers', releaseYear=1973, genres=[Genre{id=13, name='Reggae'}]}, Album{id=127, title='Younger Than Yesterday', artist='The Byrds', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=128, title='Raw Power', artist='Iggy and The Stooges', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=129, title='Remain in Light', artist='Talking Heads', releaseYear=1980, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=130, title='Marquee Moon', artist='Television', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=131, title='Paranoid', artist='Black Sabbath', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=132, title='Saturday Night Fever: The Original Movie Sound Track', artist='Various Artists', releaseYear=1977, genres=[Genre{id=44, name='Electronic'}, Genre{id=78, name='�Stage & Screen'}]}, Album{id=133, title='The Wild, the Innocent & the E Street Shuffle', artist='Bruce Springsteen', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=134, title='Ready to Die', artist='The Notorious B.I.G.', releaseYear=1994, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=135, title='Slanted and Enchanted', artist='Pavement', releaseYear=1992, genres=[Genre{id=1, name='Rock'}]}, Album{id=136, title='Greatest Hits', artist='Elton John', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=137, title='Tim', artist='The Replacements', releaseYear=1985, genres=[Genre{id=1, name='Rock'}]}, Album{id=138, title='The Chronic', artist='Dr. Dre', releaseYear=1992, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=139, title='Rejuvenation', artist='The Meters', releaseYear=1974, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=140, title='Parallel Lines', artist='Blondie', releaseYear=1978, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=141, title='Live at the Regal', artist='B.B. King', releaseYear=1965, genres=[Genre{id=8, name='Blues'}]}, Album{id=142, title='A Christmas Gift for You From Phil Spector', artist='Phil Spector', releaseYear=1963, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=143, title='Gris-Gris', artist='Dr. John, the Night Tripper', releaseYear=1968, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=144, title='Straight Outta Compton', artist='N.W.A', releaseYear=1988, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=145, title='Aja', artist='Steely Dan', releaseYear=1977, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}]}, Album{id=146, title='Surrealistic Pillow', artist='Jefferson Airplane', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=147, title='Deja vu', artist='Crosby, Stills, Nash & Young', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=148, title='Houses of the Holy', artist='Led Zeppelin', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=149, title='Santana', artist='Santana', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=79, name=' Latin'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=150, title='Darkness on the Edge of Town', artist='Bruce Springsteen', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=151, title='Funeral', artist='Arcade Fire', releaseYear=2004, genres=[Genre{id=1, name='Rock'}]}, Album{id=152, title='The B 52's / Play Loud', artist='The B 52's', releaseYear=1979, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=153, title='The Low End Theory', artist='A Tribe Called Quest', releaseYear=1991, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=154, title='Moanin' in the Moonlight', artist='Howlin' Wolf', releaseYear=1958, genres=[Genre{id=8, name='Blues'}]}, Album{id=155, title='Pretenders', artist='Pretenders', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=156, title='Paul's Boutique', artist='Beastie Boys', releaseYear=1989, genres=[Genre{id=14, name='Hip Hop'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=157, title='Closer', artist='Joy Division', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=158, title='Captain Fantastic and the Brown Dirt Cowboy', artist='Elton John', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=159, title='Alive!', artist='KISS', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=160, title='Electric Warrior', artist='T. Rex', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=161, title='The Dock of the Bay', artist='Otis Redding', releaseYear=1968, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=162, title='OK Computer', artist='Radiohead', releaseYear=1997, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=163, title='1999', artist='Prince', releaseYear=1982, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=164, title='The Very Best of Linda Ronstadt', artist='Linda Ronstadt', releaseYear=2002, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=165, title='Let's Get It On', artist='Marvin Gaye', releaseYear=1973, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=166, title='Imperial Bedroom', artist='Elvis Costello & The Attractions', releaseYear=1982, genres=[Genre{id=1, name='Rock'}]}, Album{id=167, title='Master of Puppets', artist='Metallica', releaseYear=1986, genres=[Genre{id=1, name='Rock'}]}, Album{id=168, title='My Aim Is True', artist='Elvis Costello', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=169, title='Exodus', artist='Bob Marley & The Wailers', releaseYear=1977, genres=[Genre{id=13, name='Reggae'}]}, Album{id=170, title='Live at Leeds', artist='The Who', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=171, title='The Notorious Byrd Brothers', artist='The Byrds', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=172, title='Every Picture Tells a Story', artist='Rod Stewart', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=173, title='Something/Anything?', artist='Todd Rundgren', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=174, title='Desire', artist='Bob Dylan', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=175, title='Close to You', artist='Carpenters', releaseYear=1970, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=176, title='Rocks', artist='Aerosmith', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=177, title='One Nation Under a Groove', artist='Funkadelic', releaseYear=1978, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=178, title='The Anthology: 1961-1977', artist='Curtis Mayfield and The Impressions', releaseYear=1992, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=179, title='The Definitive Collection', artist='ABBA', releaseYear=2001, genres=[Genre{id=44, name='Electronic'}, Genre{id=64, name=' Pop'}]}, Album{id=180, title='The Rolling Stones, Now!', artist='The Rolling Stones', releaseYear=1965, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}, Genre{id=64, name=' Pop'}]}, Album{id=181, title='Natty Dread', artist='Bob Marley & The Wailers', releaseYear=1974, genres=[Genre{id=13, name='Reggae'}]}, Album{id=182, title='Fleetwood Mac', artist='Fleetwood Mac', releaseYear=1975, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=183, title='Red Headed Stranger', artist='Willie Nelson', releaseYear=1975, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=184, title='The Immaculate Collection', artist='Madonna', releaseYear=1990, genres=[Genre{id=44, name='Electronic'}, Genre{id=64, name=' Pop'}]}, Album{id=185, title='The Stooges', artist='The Stooges', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=186, title='Fresh', artist='Sly & The Family Stone', releaseYear=1973, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=187, title='So', artist='Peter Gabriel', releaseYear=1986, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=188, title='Buffalo Springfield Again', artist='Buffalo Springfield', releaseYear=1967, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=189, title='Happy Trails', artist='Quicksilver Messenger Service', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=190, title='From Elvis in Memphis', artist='Elvis Presley', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=191, title='Fun House', artist='The Stooges', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=192, title='The Gilded Palace of Sin', artist='The Flying Burrito Brothers', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=193, title='Dookie', artist='Green Day', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=194, title='Transformer', artist='Lou Reed', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=195, title='Blues Breakers With Eric Clapton ("The Beano Album")', artist='John Mayall & The Bluesbreakers', releaseYear=1966, genres=[Genre{id=1, name='Rock'}, Genre{id=80, name='�Blues'}]}, Album{id=196, title='Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968', artist='Various Artists', releaseYear=1998, genres=[Genre{id=1, name='Rock'}]}, Album{id=197, title='Murmur', artist='R.E.M.', releaseYear=1983, genres=[Genre{id=1, name='Rock'}]}, Album{id=198, title='The Best of Little Walter', artist='Little Walter', releaseYear=1967, genres=[Genre{id=8, name='Blues'}]}, Album{id=199, title='Is This It', artist='The Strokes', releaseYear=2001, genres=[Genre{id=1, name='Rock'}]}, Album{id=200, title='Highway to Hell', artist='AC/DC', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=201, title='The Downward Spiral', artist='Nine Inch Nails', releaseYear=1994, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=202, title='Parsley, Sage, Rosemary and Thyme', artist='Simon & Garfunkel', releaseYear=1966, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=203, title='Bad', artist='Michael Jackson', releaseYear=1987, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=204, title='Modern Times', artist='Bob Dylan', releaseYear=2006, genres=[Genre{id=1, name='Rock'}]}, Album{id=205, title='Wheels of Fire', artist='Cream', releaseYear=1968, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=206, title='Dirty Mind', artist='Prince', releaseYear=1980, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=207, title='Abraxas', artist='Santana', releaseYear=1970, genres=[Genre{id=1, name='Rock'}, Genre{id=79, name=' Latin'}]}, Album{id=208, title='Tea for the Tillerman', artist='Cat Stevens', releaseYear=1970, genres=[Genre{id=1, name='Rock'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=209, title='Ten', artist='Pearl Jam', releaseYear=1991, genres=[Genre{id=1, name='Rock'}]}, Album{id=210, title='Everybody Knows This Is Nowhere', artist='Neil Young & Crazy Horse', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=211, title='Wish You Were Here', artist='Pink Floyd', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=212, title='Crooked Rain Crooked Rain', artist='Pavement', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=213, title='Tattoo You', artist='The Rolling Stones', releaseYear=1981, genres=[Genre{id=1, name='Rock'}]}, Album{id=214, title='Proud Mary: The Best of Ike and Tina Turner', artist='Ike & Tina Turner', releaseYear=1991, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=215, title='New York Dolls', artist='New York Dolls', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=216, title='Bo Diddley / Go Bo Diddley', artist='Bo Diddley', releaseYear=1986, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=217, title='Two Steps From the Blues', artist='Bobby "Blue" Bland', releaseYear=1961, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=218, title='The Queen Is Dead', artist='The Smiths', releaseYear=1986, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=219, title='Licensed to Ill', artist='Beastie Boys', releaseYear=1986, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=220, title='Look-Ka Py Py', artist='The Meters', releaseYear=1970, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=221, title='Loveless', artist='My Bloody Valentine', releaseYear=1991, genres=[Genre{id=1, name='Rock'}]}, Album{id=222, title='New Orleans Piano', artist='Professor Longhair', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=223, title='War', artist='U2', releaseYear=1983, genres=[Genre{id=1, name='Rock'}]}, Album{id=224, title='The Neil Diamond Collection', artist='Neil Diamond', releaseYear=1999, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=225, title='American Idiot', artist='Green Day', releaseYear=2004, genres=[Genre{id=1, name='Rock'}]}, Album{id=226, title='Nebraska', artist='Bruce Springsteen', releaseYear=1982, genres=[Genre{id=1, name='Rock'}]}, Album{id=227, title='Doolittle', artist='Pixies', releaseYear=1989, genres=[Genre{id=1, name='Rock'}]}, Album{id=228, title='Paid in Full', artist='Eric B. & Rakim', releaseYear=1987, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=229, title='Toys in the Attic', artist='Aerosmith', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=230, title='Nick of Time', artist='Bonnie Raitt', releaseYear=1989, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=231, title='A Night at the Opera', artist='Queen', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=232, title='The Kink Kronikles', artist='The Kinks', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=233, title='Mr. Tambourine Man', artist='The Byrds', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=234, title='Bookends', artist='Simon & Garfunkel', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=235, title='The Ultimate Collection', artist='Patsy Cline', releaseYear=2000, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=236, title='Mr. Excitement!', artist='Jackie Wilson', releaseYear=1992, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=237, title='My Generation', artist='The Who', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=238, title='Howlin' Wolf', artist='Howlin' Wolf', releaseYear=1962, genres=[Genre{id=8, name='Blues'}]}, Album{id=239, title='Like a Prayer', artist='Madonna', releaseYear=1989, genres=[Genre{id=44, name='Electronic'}, Genre{id=64, name=' Pop'}]}, Album{id=240, title='Can't Buy a Thrill', artist='Steely Dan', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=241, title='Let It Be', artist='The Replacements', releaseYear=1984, genres=[Genre{id=1, name='Rock'}]}, Album{id=242, title='Run D.M.C.', artist='Run D.M.C.', releaseYear=1984, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=243, title='Black Sabbath', artist='Black Sabbath', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=244, title='The Marshall Mathers LP', artist='Eminem', releaseYear=2000, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=245, title='All Killer No Filler! The Jerry Lee Lewis Anthology', artist='Jerry Lee Lewis', releaseYear=1993, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=246, title='Freak Out!', artist='The Mothers of Invention', releaseYear=1966, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=247, title='Live/Dead', artist='The Grateful Dead', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=248, title='The Shape of Jazz to Come', artist='Ornette Coleman', releaseYear=1959, genres=[Genre{id=5, name='Jazz'}]}, Album{id=249, title='Automatic for the People', artist='R.E.M.', releaseYear=1992, genres=[Genre{id=1, name='Rock'}]}, Album{id=250, title='Reasonable Doubt', artist='Jay Z', releaseYear=1996, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=251, title='Low', artist='David Bowie', releaseYear=1977, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=252, title='The Blueprint', artist='Jay Z', releaseYear=2001, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=253, title='The River', artist='Bruce Springsteen', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=254, title='Complete & Unbelievable: The Otis Redding Dictionary of Soul', artist='Otis Redding', releaseYear=1966, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=255, title='Metallica ("The Black Album")', artist='Metallica', releaseYear=1991, genres=[Genre{id=1, name='Rock'}]}, Album{id=256, title='Trans Europa Express', artist='Kraftwerk', releaseYear=1977, genres=[Genre{id=44, name='Electronic'}]}, Album{id=257, title='Whitney Houston', artist='Whitney Houston', releaseYear=1985, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=258, title='The Kinks Are The Village Green Preservation Society', artist='The Kinks', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=259, title='The Velvet Rope', artist='Janet', releaseYear=1997, genres=[Genre{id=44, name='Electronic'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=260, title='Stardust', artist='Willie Nelson', releaseYear=1978, genres=[Genre{id=9, name='Pop'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=261, title='American Beauty', artist='Grateful Dead', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=262, title='Crosby, Stills & Nash', artist='Crosby, Stills & Nash', releaseYear=1969, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=263, title='Tracy Chapman', artist='Tracy Chapman', releaseYear=1988, genres=[Genre{id=1, name='Rock'}]}, Album{id=264, title='Workingman's Dead', artist='Grateful Dead', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=265, title='The Genius of Ray Charles', artist='Ray Charles', releaseYear=1959, genres=[Genre{id=5, name='Jazz'}, Genre{id=64, name=' Pop'}]}, Album{id=266, title='Child Is Father to the Man', artist='Blood, Sweat & Tears', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=267, title='Quadrophenia', artist='The Who', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=268, title='Paul Simon', artist='Paul Simon', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=269, title='Psychocandy', artist='The Jesus and Mary Chain', releaseYear=1985, genres=[Genre{id=1, name='Rock'}]}, Album{id=270, title='Some Girls', artist='The Rolling Stones', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=271, title='The Beach Boys Today!', artist='The Beach Boys', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=272, title='Dig Me Out', artist='Sleater Kinney', releaseYear=1997, genres=[Genre{id=1, name='Rock'}]}, Album{id=273, title='Going to a Go-Go', artist='Smokey Robinson & The Miracles', releaseYear=1966, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=274, title='Nightbirds', artist='LaBelle', releaseYear=1974, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=275, title='The Slim Shady LP', artist='Eminem', releaseYear=1999, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=276, title='Mothership Connection', artist='Parliament', releaseYear=1975, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=277, title='Rhythm Nation 1814', artist='Janet Jackson', releaseYear=1989, genres=[Genre{id=44, name='Electronic'}, Genre{id=81, name=' Hip Hop'}, Genre{id=64, name=' Pop'}]}, Album{id=278, title='Anthology of American Folk Music', artist='Various', releaseYear=1997, genres=[Genre{id=8, name='Blues'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=279, title='Aladdin Sane', artist='David Bowie', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=280, title='All That You Can't Leave Behind', artist='U2', releaseYear=2000, genres=[Genre{id=1, name='Rock'}]}, Album{id=281, title='My Life', artist='Mary J. Blige', releaseYear=1994, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=282, title='Folk Singer', artist='Muddy Waters', releaseYear=1964, genres=[Genre{id=8, name='Blues'}]}, Album{id=283, title='Can't Get Enough', artist='Barry White', releaseYear=1974, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=284, title='The Cars', artist='The Cars', releaseYear=1978, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=285, title='Music of My Mind', artist='Stevie Wonder', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=286, title='I'm Still in Love With You', artist='Al Green', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=287, title='Los Angeles', artist='X', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=288, title='Anthem of the Sun', artist='Grateful Dead', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=289, title='Something Else by The Kinks', artist='The Kinks', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=290, title='Call Me', artist='Al Green', releaseYear=1973, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=291, title='Talking Heads: 77', artist='Talking Heads', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=292, title='The Basement Tapes', artist='Bob Dylan and the Band', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=293, title='White Light/White Heat', artist='The Velvet Underground', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=294, title='Kick Out the Jams', artist='MC5', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=295, title='Songs of Love and Hate', artist='Leonard Cohen', releaseYear=1970, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=296, title='Meat Is Murder', artist='The Smiths', releaseYear=1985, genres=[Genre{id=1, name='Rock'}]}, Album{id=297, title='We're Only in It for the Money', artist='The Mothers of Invention', releaseYear=1968, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=298, title='The College Dropout', artist='Kanye West', releaseYear=2003, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=299, title='Weezer (Blue Album)', artist='Weezer', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=300, title='Master of Reality', artist='Black Sabbath', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=301, title='Coat of Many Colors', artist='Dolly Parton', releaseYear=1971, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=302, title='Fear of a Black Planet', artist='Public Enemy', releaseYear=1990, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=303, title='John Wesley Harding', artist='Bob Dylan', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=304, title='Grace', artist='Jeff Buckley', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=305, title='Car Wheels on a Gravel Road', artist='Lucinda Williams', releaseYear=1998, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=306, title='Odelay', artist='Beck', releaseYear=1996, genres=[Genre{id=44, name='Electronic'}, Genre{id=81, name=' Hip Hop'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=307, title='A Hard Day's Night', artist='The Beatles', releaseYear=1964, genres=[Genre{id=1, name='Rock'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=308, title='Songs for Swingin' Lovers!', artist='Frank Sinatra', releaseYear=1956, genres=[Genre{id=5, name='Jazz'}, Genre{id=64, name=' Pop'}]}, Album{id=309, title='Willy and the Poor Boys', artist='Creedence Clearwater Revival', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=310, title='Blood Sugar Sex Magik', artist='Red Hot Chili Peppers', releaseYear=1991, genres=[Genre{id=1, name='Rock'}]}, Album{id=311, title='The Sun Records Collection', artist='Various', releaseYear=1994, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=65, name=' Blues'}, Genre{id=64, name=' Pop'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=312, title='Nothing's Shocking', artist='Jane's Addiction', releaseYear=1988, genres=[Genre{id=1, name='Rock'}]}, Album{id=313, title='MTV Unplugged in New York', artist='Nirvana', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=314, title='The Miseducation of Lauryn Hill', artist='Lauryn Hill', releaseYear=1998, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=315, title='Damn the Torpedoes', artist='Tom Petty and the Heartbreakers', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=316, title='The Velvet Underground', artist='The Velvet Underground', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=317, title='Surfer Rosa', artist='Pixies', releaseYear=1988, genres=[Genre{id=1, name='Rock'}]}, Album{id=318, title='Back Stabbers', artist='The O'Jays', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=319, title='Burnin'', artist='The Wailers', releaseYear=1973, genres=[Genre{id=13, name='Reggae'}]}, Album{id=320, title='Amnesiac', artist='Radiohead', releaseYear=2001, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=321, title='Pink Moon', artist='Nick Drake', releaseYear=1972, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=322, title='Sail Away', artist='Randy Newman', releaseYear=1972, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=323, title='Ghost in the Machine', artist='The Police', releaseYear=1981, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=324, title='Station to Station', artist='David Bowie', releaseYear=1976, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=325, title='Slowhand', artist='Eric Clapton', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=326, title='Disintegration', artist='The Cure', releaseYear=1989, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=327, title='Exile in Guyville', artist='Liz Phair', releaseYear=1993, genres=[Genre{id=1, name='Rock'}]}, Album{id=328, title='Daydream Nation', artist='Sonic Youth', releaseYear=1988, genres=[Genre{id=1, name='Rock'}]}, Album{id=329, title='In the Jungle Groove', artist='James Brown', releaseYear=1986, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=330, title='Tonight's the Night', artist='Neil Young', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=331, title='Help!', artist='The Beatles', releaseYear=1965, genres=[Genre{id=1, name='Rock'}, Genre{id=72, name=' Stage & Screen'}]}, Album{id=332, title='Shoot Out the Lights', artist='Richard & Linda Thompson', releaseYear=1982, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=333, title='Wild Gift', artist='X', releaseYear=1981, genres=[Genre{id=1, name='Rock'}]}, Album{id=334, title='Squeezing Out Sparks', artist='Graham Parker & The Rumour', releaseYear=1979, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=335, title='Superunknown', artist='Soundgarden', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=336, title='In Rainbows', artist='Radiohead', releaseYear=2007, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=337, title='Aqualung', artist='Jethro Tull', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=338, title='Cheap Thrills', artist='Big Brother & the Holding Company', releaseYear=1968, genres=[Genre{id=1, name='Rock'}]}, Album{id=339, title='The Heart of Saturday Night', artist='Tom Waits', releaseYear=1974, genres=[Genre{id=5, name='Jazz'}, Genre{id=64, name=' Pop'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=340, title='Damaged', artist='Black Flag', releaseYear=1981, genres=[Genre{id=1, name='Rock'}]}, Album{id=341, title='Play', artist='Moby', releaseYear=1999, genres=[Genre{id=44, name='Electronic'}]}, Album{id=342, title='Violator', artist='Depeche Mode', releaseYear=1990, genres=[Genre{id=44, name='Electronic'}]}, Album{id=343, title='Bat Out of Hell', artist='Meat Loaf', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=344, title='Berlin', artist='Lou Reed', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=345, title='Stop Making Sense', artist='Talking Heads', releaseYear=1984, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=346, title='3 Feet High and Rising', artist='De La Soul', releaseYear=1989, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=347, title='The Piper at the Gates of Dawn', artist='Pink Floyd', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=348, title='Muddy Waters at Newport 1960', artist='Muddy Waters', releaseYear=1960, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=349, title='The Black Album', artist='Jay Z', releaseYear=2003, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=350, title='Roger the Engineer', artist='The Yardbirds', releaseYear=1966, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=351, title='Rust Never Sleeps', artist='Neil Young & Crazy Horse', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=352, title='Brothers in Arms', artist='Dire Straits', releaseYear=1985, genres=[Genre{id=1, name='Rock'}]}, Album{id=353, title='My Beautiful Dark Twisted Fantasy', artist='Kanye West', releaseYear=2010, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=354, title='52nd Street', artist='Billy Joel', releaseYear=1978, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=355, title='Having a Rave Up', artist='The Yardbirds', releaseYear=1965, genres=[Genre{id=1, name='Rock'}]}, Album{id=356, title='12 Songs', artist='Randy Newman', releaseYear=1970, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=357, title='Between the Buttons', artist='The Rolling Stones', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=358, title='Sketches of Spain', artist='Miles Davis', releaseYear=1960, genres=[Genre{id=5, name='Jazz'}]}, Album{id=359, title='Honky Ch�teau', artist='Elton John', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=360, title='Singles Going Steady', artist='Buzzcocks', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=361, title='Stankonia', artist='OutKast', releaseYear=2000, genres=[Genre{id=14, name='Hip Hop'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=362, title='Siamese Dream', artist='The Smashing Pumpkins', releaseYear=1993, genres=[Genre{id=1, name='Rock'}]}, Album{id=363, title='Substance 1987', artist='New Order', releaseYear=1987, genres=[Genre{id=44, name='Electronic'}]}, Album{id=364, title='L.A. Woman', artist='The Doors', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=365, title='Rage Against the Machine', artist='Rage Against the Machine', releaseYear=1992, genres=[Genre{id=14, name='Hip Hop'}, Genre{id=66, name=' Rock'}]}, Album{id=366, title='American Recordings', artist='Johnny Cash', releaseYear=1994, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=367, title='Ray of Light', artist='Madonna', releaseYear=1998, genres=[Genre{id=44, name='Electronic'}, Genre{id=64, name=' Pop'}]}, Album{id=368, title='Eagles', artist='Eagles', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=369, title='Louder Than Bombs', artist='The Smiths', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=370, title='Mott', artist='Mott the Hoople', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=371, title='Whatever People Say I Am, That's What I'm Not', artist='Arctic Monkeys', releaseYear=2006, genres=[Genre{id=1, name='Rock'}]}, Album{id=372, title='Reggatta de Blanc', artist='The Police', releaseYear=1979, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=373, title='Volunteers', artist='Jefferson Airplane', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=374, title='Siren', artist='Roxy Music', releaseYear=1975, genres=[Genre{id=1, name='Rock'}]}, Album{id=375, title='Late for the Sky', artist='Jackson Browne', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=376, title='Post', artist='Bjork', releaseYear=1995, genres=[Genre{id=44, name='Electronic'}]}, Album{id=377, title='The Ultimate Collection: 1948-1990', artist='John Lee Hooker', releaseYear=1991, genres=[Genre{id=8, name='Blues'}]}, Album{id=378, title='(What's the Story) Morning Glory?', artist='Oasis', releaseYear=1995, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=379, title='CrazySexyCool', artist='TLC', releaseYear=1994, genres=[Genre{id=44, name='Electronic'}, Genre{id=81, name=' Hip Hop'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=380, title='Funky Kingston', artist='Toots & The Maytals', releaseYear=1973, genres=[Genre{id=13, name='Reggae'}]}, Album{id=381, title='The Smile Sessions', artist='The Beach Boys', releaseYear=2011, genres=[Genre{id=1, name='Rock'}]}, Album{id=382, title='The Modern Lovers', artist='The Modern Lovers', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=383, title='More Songs About Buildings and Food', artist='Talking Heads', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=384, title='A Quick One', artist='The Who', releaseYear=1966, genres=[Genre{id=1, name='Rock'}]}, Album{id=385, title='"Love and Theft"', artist='Bob Dylan', releaseYear=2001, genres=[Genre{id=1, name='Rock'}]}, Album{id=386, title='Pretzel Logic', artist='Steely Dan', releaseYear=1974, genres=[Genre{id=5, name='Jazz'}, Genre{id=66, name=' Rock'}]}, Album{id=387, title='Enter the Wu_Tang: 36 Chambers', artist='Wu Tang Clan', releaseYear=1993, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=388, title='The Indestructible Beat of Soweto', artist='Various Artists', releaseYear=1985, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=77, name='�Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=389, title='The End of the Innocence', artist='Don Henley', releaseYear=1989, genres=[Genre{id=1, name='Rock'}]}, Album{id=390, title='Elephant', artist='The White Stripes', releaseYear=2003, genres=[Genre{id=1, name='Rock'}]}, Album{id=391, title='The Pretender', artist='Jackson Browne', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=392, title='Let It Be', artist='The Beatles', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=393, title='Kala', artist='M.I.A.', releaseYear=2007, genres=[Genre{id=44, name='Electronic'}, Genre{id=81, name=' Hip Hop'}, Genre{id=74, name=' Reggae'}, Genre{id=64, name=' Pop'}]}, Album{id=394, title='Good Old Boys', artist='Randy Newman', releaseYear=1974, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=395, title='Sound of Silver', artist='LCD Soundsystem', releaseYear=2007, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=396, title='For Your Pleasure', artist='Roxy Music', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=397, title='Blue Lines', artist='Massive Attack', releaseYear=1991, genres=[Genre{id=44, name='Electronic'}, Genre{id=74, name=' Reggae'}]}, Album{id=398, title='Eliminator', artist='ZZ Top', releaseYear=1983, genres=[Genre{id=1, name='Rock'}]}, Album{id=399, title='Rain Dogs', artist='Tom Waits', releaseYear=1985, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=400, title='Anthology: The Best of The Temptations', artist='The Temptations', releaseYear=1995, genres=[Genre{id=44, name='Electronic'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=401, title='Californication', artist='Red Hot Chili Peppers', releaseYear=1999, genres=[Genre{id=1, name='Rock'}]}, Album{id=402, title='Illmatic', artist='Nas', releaseYear=1994, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=403, title='(pronounced 'leh-'nerd 'skin-'nerd)', artist='Lynyrd Skynyrd', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=404, title='Dr. John's Gumbo', artist='Dr. John', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=405, title='Radio City', artist='Big Star', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=406, title='Rid of Me', artist='PJ Harvey', releaseYear=1993, genres=[Genre{id=1, name='Rock'}]}, Album{id=407, title='Sandinista!', artist='The Clash', releaseYear=1980, genres=[Genre{id=1, name='Rock'}, Genre{id=74, name=' Reggae'}]}, Album{id=408, title='I Do Not Want What I Haven't Got', artist='Sinead O'Connor', releaseYear=1989, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=409, title='Strange Days', artist='The Doors', releaseYear=1967, genres=[Genre{id=1, name='Rock'}]}, Album{id=410, title='Time Out of Mind', artist='Bob Dylan', releaseYear=1997, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=411, title='461 Ocean Boulevard', artist='Eric Clapton', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=412, title='Pink Flag', artist='Wire', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=413, title='Double Nickels on the Dime', artist='Minutemen', releaseYear=1984, genres=[Genre{id=1, name='Rock'}]}, Album{id=414, title='Beauty and the Beat', artist='The Go Go's', releaseYear=1981, genres=[Genre{id=1, name='Rock'}]}, Album{id=415, title='Van Halen', artist='Van Halen', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=416, title='Mule Variations', artist='Tom Waits', releaseYear=1999, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=417, title='Boy', artist='U2', releaseYear=1980, genres=[Genre{id=1, name='Rock'}]}, Album{id=418, title='Band on the Run', artist='Paul McCartney & Wings', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=419, title='Dummy', artist='Portishead', releaseYear=1994, genres=[Genre{id=44, name='Electronic'}]}, Album{id=420, title='The "Chirping" Crickets', artist='The Crickets', releaseYear=1957, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=421, title='The Best of the Girl Groups, Volume 1', artist='Various Artists', releaseYear=1990, genres=[Genre{id=1, name='Rock'}, Genre{id=76, name='�Pop'}]}, Album{id=422, title='Presenting the Fabulous Ronettes Featuring Veronica', artist='The Ronettes', releaseYear=1963, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=423, title='Anthology', artist='Diana Ross & The Supremes', releaseYear=2001, genres=[Genre{id=44, name='Electronic'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=424, title='The Rising', artist='Bruce Springsteen', releaseYear=2002, genres=[Genre{id=1, name='Rock'}]}, Album{id=425, title='Grievous Angel', artist='Gram Parsons', releaseYear=1974, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=426, title='Cheap Trick at Budokan', artist='Cheap Trick', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=427, title='Sleepless', artist='Peter Wolf', releaseYear=2002, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}, Genre{id=64, name=' Pop'}]}, Album{id=428, title='Outlandos d'Amour', artist='The Police', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=429, title='Another Green World', artist='Brian Eno', releaseYear=1975, genres=[Genre{id=44, name='Electronic'}]}, Album{id=430, title='Vampire Weekend', artist='Vampire Weekend', releaseYear=2007, genres=[Genre{id=1, name='Rock'}]}, Album{id=431, title='Stories From the City, Stories From the Sea', artist='PJ Harvey', releaseYear=2000, genres=[Genre{id=1, name='Rock'}]}, Album{id=432, title='Here Come the Warm Jets', artist='Brian Eno', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=433, title='All Things Must Pass', artist='George Harrison', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=434, title='#1 Record', artist='Big Star', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=435, title='In Utero', artist='Nirvana', releaseYear=1993, genres=[Genre{id=1, name='Rock'}]}, Album{id=436, title='Sea Change', artist='Beck', releaseYear=2002, genres=[Genre{id=1, name='Rock'}]}, Album{id=437, title='Tha Carter III', artist='Lil Wayne', releaseYear=2008, genres=[Genre{id=14, name='Hip Hop'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=438, title='Boys Don't Cry', artist='The Cure', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=439, title='Live at the Harlem Square Club, 1963', artist='Sam Cooke', releaseYear=1985, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=440, title='Rum Sodomy & the Lash', artist='The Pogues', releaseYear=1985, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=441, title='Suicide', artist='Suicide', releaseYear=1977, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=442, title='Q: Are We Not Men? A: We Are Devo!', artist='DEVO', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=443, title='In Color', artist='Cheap Trick', releaseYear=1977, genres=[Genre{id=1, name='Rock'}]}, Album{id=444, title='The World Is a Ghetto', artist='War', releaseYear=1972, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=445, title='Fly Like an Eagle', artist='Steve Miller Band', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=446, title='Back in the USA', artist='MC5', releaseYear=1970, genres=[Genre{id=1, name='Rock'}]}, Album{id=447, title='Getz / Gilberto', artist='Stan Getz�/�Joao Gilberto�featuring�Antonio Carlos Jobim', releaseYear=1964, genres=[Genre{id=5, name='Jazz'}]}, Album{id=448, title='Synchronicity', artist='The Police', releaseYear=1983, genres=[Genre{id=1, name='Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=449, title='Third/Sister Lovers', artist='Big Star', releaseYear=1978, genres=[Genre{id=1, name='Rock'}]}, Album{id=450, title='For Everyman', artist='Jackson Browne', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=451, title='Back to Black', artist='Amy Winehouse', releaseYear=2006, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=64, name=' Pop'}]}, Album{id=452, title='John Prine', artist='John Prine', releaseYear=1971, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=453, title='Strictly Business', artist='EPMD', releaseYear=1987, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=454, title='Love It to Death', artist='Alice Cooper', releaseYear=1971, genres=[Genre{id=1, name='Rock'}]}, Album{id=455, title='How Will the Wolf Survive?', artist='Los Lobos', releaseYear=1984, genres=[Genre{id=1, name='Rock'}, Genre{id=79, name=' Latin'}]}, Album{id=456, title='Here, My Dear', artist='Marvin Gaye', releaseYear=1978, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=457, title='Z', artist='My Morning Jacket', releaseYear=2005, genres=[Genre{id=1, name='Rock'}]}, Album{id=458, title='Tumbleweed Connection', artist='Elton John', releaseYear=1970, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=459, title='The Drifters' Golden Hits', artist='The Drifters', releaseYear=1968, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=460, title='Live Through This', artist='Hole', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=461, title='Metal Box', artist='Public Image Ltd.', releaseYear=1979, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=462, title='Document', artist='R.E.M.', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=463, title='Heaven Up Here', artist='Echo and The Bunnymen', releaseYear=1981, genres=[Genre{id=1, name='Rock'}]}, Album{id=464, title='Hysteria', artist='Def Leppard', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=465, title='69 Love Songs', artist='The Magnetic Fields', releaseYear=1999, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=466, title='A Rush of Blood to the Head', artist='Coldplay', releaseYear=2002, genres=[Genre{id=1, name='Rock'}]}, Album{id=467, title='Tunnel of Love', artist='Bruce Springsteen', releaseYear=1987, genres=[Genre{id=1, name='Rock'}]}, Album{id=468, title='The Paul Butterfield Blues Band', artist='The Paul Butterfield Blues Band', releaseYear=1965, genres=[Genre{id=1, name='Rock'}, Genre{id=65, name=' Blues'}]}, Album{id=469, title='The Score', artist='Fugees', releaseYear=1996, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=470, title='Radio', artist='L.L. Cool J', releaseYear=1985, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=471, title='I Want to See the Bright Lights Tonight', artist='Richard & Linda Thompson', releaseYear=1974, genres=[Genre{id=1, name='Rock'}]}, Album{id=472, title='Faith', artist='George Michael', releaseYear=1987, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}, Genre{id=73, name=' Funk / Soul'}, Genre{id=65, name=' Blues'}, Genre{id=64, name=' Pop'}]}, Album{id=473, title='The Smiths', artist='The Smiths', releaseYear=1984, genres=[Genre{id=1, name='Rock'}]}, Album{id=474, title='Proxima estacion: Esperanza', artist='Manu Chao', releaseYear=2001, genres=[Genre{id=1, name='Rock'}, Genre{id=74, name=' Reggae'}, Genre{id=79, name=' Latin'}]}, Album{id=475, title='Armed Forces', artist='Elvis Costello & The Attractions', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=476, title='Life After Death', artist='The Notorious B.I.G.', releaseYear=1997, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=477, title='Down Every Road', artist='Merle Haggard', releaseYear=1996, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=478, title='All Time Greatest Hits', artist='Loretta Lynn', releaseYear=2002, genres=[Genre{id=70, name='Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=479, title='Maggot Brain', artist='Funkadelic', releaseYear=1971, genres=[Genre{id=1, name='Rock'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=480, title='Only Built 4 Cuban Linx', artist='Raekwon', releaseYear=1995, genres=[Genre{id=14, name='Hip Hop'}]}, Album{id=481, title='Voodoo', artist='D'Angelo', releaseYear=2000, genres=[Genre{id=14, name='Hip Hop'}, Genre{id=73, name=' Funk / Soul'}]}, Album{id=482, title='Guitar Town', artist='Steve Earle', releaseYear=1986, genres=[Genre{id=1, name='Rock'}, Genre{id=67, name=' Folk'}, Genre{id=68, name=' World'}, Genre{id=69, name=' & Country'}]}, Album{id=483, title='Entertainment!', artist='Gang of Four', releaseYear=1979, genres=[Genre{id=1, name='Rock'}]}, Album{id=484, title='All the Young Dudes', artist='Mott the Hoople', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=485, title='Vitalogy', artist='Pearl Jam', releaseYear=1994, genres=[Genre{id=1, name='Rock'}]}, Album{id=486, title='That's the Way of the World', artist='Earth, Wind & Fire', releaseYear=1975, genres=[Genre{id=3, name='Funk / Soul'}]}, Album{id=487, title='She's So Unusual', artist='Cyndi Lauper', releaseYear=1983, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}]}, Album{id=488, title='New Day Rising', artist='Husker Du', releaseYear=1985, genres=[Genre{id=1, name='Rock'}]}, Album{id=489, title='Destroyer', artist='KISS', releaseYear=1976, genres=[Genre{id=1, name='Rock'}]}, Album{id=490, title='Tres hombres', artist='ZZ Top', releaseYear=1973, genres=[Genre{id=1, name='Rock'}]}, Album{id=491, title='Born Under a Bad Sign', artist='Albert King', releaseYear=1967, genres=[Genre{id=3, name='Funk / Soul'}, Genre{id=65, name=' Blues'}]}, Album{id=492, title='Touch', artist='Eurythmics', releaseYear=1983, genres=[Genre{id=44, name='Electronic'}, Genre{id=64, name=' Pop'}]}, Album{id=493, title='Yankee Hotel Foxtrot', artist='Wilco', releaseYear=2002, genres=[Genre{id=1, name='Rock'}]}, Album{id=494, title='Oracular Spectacular', artist='MGMT', releaseYear=2007, genres=[Genre{id=44, name='Electronic'}, Genre{id=66, name=' Rock'}, Genre{id=64, name=' Pop'}]}, Album{id=495, title='Give It Up', artist='Bonnie Raitt', releaseYear=1972, genres=[Genre{id=1, name='Rock'}]}, Album{id=496, title='Boz Scaggs', artist='Boz Scaggs', releaseYear=1969, genres=[Genre{id=1, name='Rock'}]}, Album{id=497, title='White Blood Cells', artist='The White Stripes', releaseYear=2001, genres=[Genre{id=1, name='Rock'}]}, Album{id=498, title='The Stone Roses', artist='The Stone Roses', releaseYear=1989, genres=[Genre{id=1, name='Rock'}]}, Album{id=499, title='Live in Cook County Jail', artist='B.B. King', releaseYear=1971, genres=[Genre{id=8, name='Blues'}]}, Album{id=500, title='Aquemini', artist='OutKast', releaseYear=1998, genres=[Genre{id=14, name='Hip Hop'}]}]
 
 Process finished with exit code 0
-s
