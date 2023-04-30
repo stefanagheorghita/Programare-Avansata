@@ -1,0 +1,12 @@
+Albums:
+Finding the albums with the name-The Wall: [Album{id=1, title='The Wall', artist='Pink Floyd', releaseYear=1979, genres=[Rock]}]
+Finding the albums with the name-Thriller: [Album{id=2, title='Thriller', artist='Michael Jackson', releaseYear=1982, genres=[Funk, Soul, Pop]}]
+All the albums: [Album{id=1, title='The Wall', artist='Pink Floyd', releaseYear=1979, genres=[Rock]}, Album{id=2, title='Thriller', artist='Michael Jackson', releaseYear=1982, genres=[Funk, Soul, Pop]}]
+Artists:
+Finding the artists with the id-1: Pink Floyd
+Finding the artists with the name-Michael Jackson: 2
+All the artists: [Artist{id=1, name='Pink Floyd'}, Artist{id=2, name='Michael Jackson'}]
+All the genres:[Genre{id=2, name='Funk'}, Genre{id=4, name='Pop'}, Genre{id=1, name='Rock'}, Genre{id=3, name='Soul'}]
+
+Process finished with exit code 0
+s
