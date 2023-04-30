@@ -40,3 +40,5 @@ Lab 7:
 
 Lab 8:
 -[x] Compulsory
+-[x] Optional
+-[x] Bonus
