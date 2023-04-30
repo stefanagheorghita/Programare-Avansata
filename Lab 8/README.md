@@ -1,1 +1,3 @@
 -[x] Compulsory
+-[x] Optional
+-[x] Bonus
