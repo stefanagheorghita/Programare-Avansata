@@ -6,11 +6,11 @@ public class Album  extends Superclass{
 
 
     private String title;
-    private String artist;
+    private Artist artist;
     private int releaseYear;
     private List<Genre> genres;
 
-    public Album(int id, String title, String artist, int releaseYear, List<Genre> genres) {
+    public Album(int id, String title, Artist artist, int releaseYear, List<Genre> genres) {
         this.id = id;
         this.title = title;
         this.artist = artist;
@@ -37,11 +37,11 @@ public class Album  extends Superclass{
         this.title = title;
     }
 
-    public String getArtist() {
+    public Artist getArtist() {
         return artist;
     }
 
-    public void setArtist(String artist) {
+    public void setArtist(Artist artist) {
         this.artist = artist;
     }
 

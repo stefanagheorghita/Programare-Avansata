@@ -3,7 +3,9 @@ package org.example.DAO;
 import org.example.ConnectionPool;
 import org.example.model.Album;
 import org.example.Database;
+import org.example.model.Artist;
 import org.example.model.Genre;
+import org.example.model.RelationshipAlbumGenre;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -33,7 +35,7 @@ public class AlbumDAO {
         for (String genreName : genres) {
             if (genreDAO.findByName(genreName) == null) {
                 genreDAO.create(genre);
-                albumToGenreDAO.create(findByTitleArtistYear(title, artist, year), genreDAO.findByName(genreName));
+                albumToGenreDAO.create(findByTitleArtistYear(title, artist, year), genreDAO.findByName(genreName).getId());
             }
         }
     }
@@ -54,10 +56,10 @@ public class AlbumDAO {
                 List<Genre> genresList = new ArrayList<>();
                 GenreDAO genreDAO = new GenreDAO();
                 for (String genre : genres) {
-                    int genreId = genreDAO.findByName(genre);
-                    genresList.add(new Genre(genreId, genre));
+                    genresList.add(genreDAO.findByName(genre));
                 }
-                Album album = new Album(id, title, artist, releaseYear, genresList);
+                Artist artist1 = new ArtistDAO().findByName(artist);
+                Album album = new Album(id, title, artist1, releaseYear, genresList);
                 albums.add(album);
             }
             return albums;
@@ -79,10 +81,10 @@ public class AlbumDAO {
                 List<Genre> genresList = new ArrayList<>();
                 GenreDAO genreDAO = new GenreDAO();
                 for (String genre : genres) {
-                    int genreId = genreDAO.findByName(genre);
-                    genresList.add(new Genre(genreId, genre));
+                    genresList.add(genreDAO.findByName(genre));
                 }
-                Album album = new Album(id, title, artist, releaseYear, genresList);
+                Artist artist1 = new ArtistDAO().findByName(artist);
+                Album album = new Album(id, title, artist1, releaseYear, genresList);
                 albums.add(album);
                 return albums;
             }
@@ -104,10 +106,11 @@ public class AlbumDAO {
                 List<Genre> genresList = new ArrayList<>();
                 GenreDAO genreDAO = new GenreDAO();
                 for (String genre : genres) {
-                    int genreId = genreDAO.findByName(genre);
-                    genresList.add(new Genre(genreId, genre));
+                    ;
+                    genresList.add(genreDAO.findByName(genre));
                 }
-                Album album = new Album(id, title, artist, releaseYear, genresList);
+                Artist artist1 = new ArtistDAO().findByName(artist);
+                Album album = new Album(id, title, artist1, releaseYear, genresList);
                 albums.add(album);
             }
             return albums;
@@ -115,12 +118,20 @@ public class AlbumDAO {
     }
 
 
-    public String findById(int id) throws SQLException {
+    public Album findById(int id) throws SQLException {
         Connection con = Database.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
-                     "select title from albums where id=" + id)) {
-            return rs.next() ? rs.getString(1) : null;
+                     "select * from albums where id=" + id)) {
+            if (rs.next()) {
+                List<Genre> genres = new ArrayList<>();
+                String[] genresString = rs.getString("genre").split(",");
+                for (String genre : genresString) {
+                    genres.add(new GenreDAO().findByName(genre));
+                }
+                return new Album(id, rs.getString("title"), new ArtistDAO().findById(rs.getInt("artist")), rs.getInt("release_year"), genres);
+            } else
+                return null;
         }
     }
 

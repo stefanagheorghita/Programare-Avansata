@@ -1,6 +1,8 @@
 package org.example.DAO;
 
 import org.example.ConnectionPool;
+import org.example.model.Genre;
+import org.example.model.RelationshipAlbumGenre;
 
 import java.sql.*;
 import java.util.List;
@@ -20,7 +22,7 @@ public class AlbumToGenreDAO {
         }
     }
 
-    public List<Integer> find(int albumId, int genreId) throws SQLException {
+    public RelationshipAlbumGenre find(int albumId, int genreId) throws SQLException {
         Connection con = ConnectionPool.getConnection();
         try {
             PreparedStatement stmt = con.prepareStatement("select * from album_genre where album_id=? and genre_id=?");
@@ -28,7 +30,10 @@ public class AlbumToGenreDAO {
             stmt.setInt(2, genreId);
             ResultSet rs = stmt.executeQuery();
             List<Integer> albumGenre = List.of(rs.getInt(1), rs.getInt(2));
-            return rs.next() ? albumGenre : null;
+            if(rs.next())
+                return new RelationshipAlbumGenre(rs.getInt(1),new AlbumDAO().findById(rs.getInt(2)), new GenreDAO().findById(rs.getInt(3)));
+            else
+                return null;
         } catch (SQLException e) {
             return null;
         }

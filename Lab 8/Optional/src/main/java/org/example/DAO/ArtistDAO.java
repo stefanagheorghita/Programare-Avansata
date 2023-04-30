@@ -19,13 +19,13 @@ public class ArtistDAO {
         }
     }
 
-    public List<Artist> findAll() throws SQLException{
+    public List<Artist> findAll() throws SQLException {
         //Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
                      "select * from artists")) {
-            List<Artist> artists =new ArrayList<>();
+            List<Artist> artists = new ArrayList<>();
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
@@ -36,16 +36,20 @@ public class ArtistDAO {
         }
     }
 
-    public Integer findByName(String name) throws SQLException {
+    public Artist findByName(String name) throws SQLException {
         // Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try {
-            stmt =con.prepareStatement("select * from artists where name=?");
+            stmt = con.prepareStatement("select * from artists where name=?");
             stmt.setString(1, name);
             rs = stmt.executeQuery();
-            return rs.next() ? rs.getInt(1) : null;
+            if (rs.next())
+                return new Artist(rs.getInt(1), name);
+            else
+                return null;
+
         } finally {
             if (rs != null) {
                 try {
@@ -68,13 +72,16 @@ public class ArtistDAO {
         }
     }
 
-    public String findById(int id) throws SQLException {
+    public Artist findById(int id) throws SQLException {
         //  Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
-                     "select name from artists where id=" + id)) {
-            return rs.next() ? rs.getString(1) : null;
+                     "select * from artists where id=" + id)) {
+            if (rs.next())
+                return new Artist(id, rs.getString(2));
+            else
+                return null;
         }
     }
 }
