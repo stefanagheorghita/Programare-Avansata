@@ -23,4 +23,8 @@ public class ConnectionPool {
             throw e;
         }
     }
+
+    public static void rollback() throws SQLException {
+        dataSource.getConnection().rollback();
+    }
 }

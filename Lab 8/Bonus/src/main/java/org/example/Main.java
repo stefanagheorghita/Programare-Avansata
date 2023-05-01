@@ -9,15 +9,15 @@ public class Main {
     public static void main(String args[]) {
         try {
             var artists = new ArtistDAO();
-            artists.create("Pink Floyd");
-            artists.create("Michael Jackson");
+           // artists.create("Pink Floyd");
+           // artists.create("Michael Jackson");
             var genres = new GenreDAO();
-            genres.create("Rock");
-            genres.create("Funk");
-            genres.create("Soul");
-            genres.create("Pop");
+           // genres.create("Rock");
+           // genres.create("Funk");
+          //  genres.create("Soul");
+          //  genres.create("Pop");
             //Database.getConnection().commit();
-            ConnectionPool.getConnection().commit();
+           // ConnectionPool.getConnection().commit();
             var albums = new AlbumDAO();
             albums.create(1979, "The Wall", "Pink Floyd", "Rock");
             albums.create(1982, "Thriller", "Michael Jackson", "Funk,Soul,Pop");
@@ -31,10 +31,10 @@ public class Main {
             System.out.println("Finding the artists with the name-Michael Jackson: " + artists.findByName("Michael Jackson"));
             System.out.println("All the artists: " + artists.findAll());
             System.out.println("All the genres:" + genres.findAll());
-            Database.getConnection().close();
+            ConnectionPool.getConnection().close();
         } catch (SQLException e) {
             System.err.println(e);
-            Database.rollback();
+          //  Database.rollback();
         }
     }
 }

@@ -34,18 +34,21 @@ public class AlbumDAO {
         List<String> genres = List.of(genre.split(","));
         for (String genreName : genres) {
             if (genreDAO.findByName(genreName) == null) {
-                genreDAO.create(genre);
+                genreDAO.create(genreName);
                 albumToGenreDAO.create(findByTitleArtistYear(title, artist, year), genreDAO.findByName(genreName).getId());
             }
         }
+        con.close();
     }
 
     public List<Album> findAll() throws SQLException {
         // Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
-        try (Statement stmt = con.createStatement();
-             ResultSet rs = stmt.executeQuery(
-                     "select * from albums")) {
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+        try {
+            stmt = con.prepareStatement("select * from albums");
+            rs = stmt.executeQuery();
             List<Album> albums = new ArrayList<>();
             while (rs.next()) {
                 int id = rs.getInt("id");
@@ -63,15 +66,37 @@ public class AlbumDAO {
                 albums.add(album);
             }
             return albums;
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                }
+            }
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                }
+            }
         }
     }
 
     public List<Album> findByTitle(String title) throws SQLException {
         // Connection con = Database.getConnection();
         Connection con = ConnectionPool.getConnection();
-        try (Statement stmt = con.createStatement();
-             ResultSet rs = stmt.executeQuery(
-                     "select id,release_year,artist,genre from albums where title='" + title + "'")) {
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+        try {
+            stmt = con.prepareStatement("select id,release_year,artist,genre from albums where title=?");
+            stmt.setString(1, title);
+            rs = stmt.executeQuery();
             List<Album> albums = new ArrayList<>();
             while (rs.next()) {
                 int id = rs.getInt("id");
@@ -88,12 +113,33 @@ public class AlbumDAO {
                 albums.add(album);
                 return albums;
             }
+            return null;
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                }
+            }
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                }
+            }
         }
-        return null;
+//
     }
 
     public List<Album> findByArtist(String artist) throws SQLException {
-        Connection con = Database.getConnection();
+        // Connection con = Database.getConnection();
+        Connection con = ConnectionPool.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
                      "select * from albums where artist='" + artist + "'")) {
@@ -113,16 +159,19 @@ public class AlbumDAO {
                 Album album = new Album(id, title, artist1, releaseYear, genresList);
                 albums.add(album);
             }
+            con.close();
             return albums;
         }
     }
 
 
     public Album findById(int id) throws SQLException {
-        Connection con = Database.getConnection();
+        // Connection con = Database.getConnection();
+        Connection con = ConnectionPool.getConnection();
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
                      "select * from albums where id=" + id)) {
+            con.close();
             if (rs.next()) {
                 List<Genre> genres = new ArrayList<>();
                 String[] genresString = rs.getString("genre").split(",");
@@ -132,6 +181,7 @@ public class AlbumDAO {
                 return new Album(id, rs.getString("title"), new ArtistDAO().findById(rs.getInt("artist")), rs.getInt("release_year"), genres);
             } else
                 return null;
+
         }
     }
 
