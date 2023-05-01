@@ -18,6 +18,7 @@ public class GenreDAO {
             pstmt.setString(1, name);
             pstmt.executeUpdate();
         }
+        con.close();
     }
 
     public List<Genre> findAll() throws SQLException {
@@ -33,6 +34,7 @@ public class GenreDAO {
                 Genre genre = new Genre(id, name);
                 genres.add(genre);
             }
+            con.close();
             return genres;
         }
     }

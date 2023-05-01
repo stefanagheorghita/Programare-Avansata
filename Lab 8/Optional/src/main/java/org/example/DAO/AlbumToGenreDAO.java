@@ -19,7 +19,9 @@ public class AlbumToGenreDAO {
                 pstmt.setInt(2, id2);
                 pstmt.executeUpdate();
             }
+
         }
+        con.close();
     }
 
     public RelationshipAlbumGenre find(int albumId, int genreId) throws SQLException {
@@ -30,6 +32,7 @@ public class AlbumToGenreDAO {
             stmt.setInt(2, genreId);
             ResultSet rs = stmt.executeQuery();
             List<Integer> albumGenre = List.of(rs.getInt(1), rs.getInt(2));
+            con.close();
             if(rs.next())
                 return new RelationshipAlbumGenre(rs.getInt(1),new AlbumDAO().findById(rs.getInt(2)), new GenreDAO().findById(rs.getInt(3)));
             else

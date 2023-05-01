@@ -21,7 +21,7 @@ public class Main {
             var albums = new AlbumDAO();
             albums.create(1979, "The Wall", "Pink Floyd", "Rock");
             albums.create(1982, "Thriller", "Michael Jackson", "Funk,Soul,Pop");
-            Database.getConnection().commit();
+            //Database.getConnection().commit();
             System.out.println("Albums:");
             System.out.println("Finding the albums with the name-The Wall: " + albums.findByTitle("The Wall"));
             System.out.println("Finding the albums with the name-Thriller: " + albums.findByTitle("Thriller"));
@@ -31,7 +31,7 @@ public class Main {
             System.out.println("Finding the artists with the name-Michael Jackson: " + artists.findByName("Michael Jackson"));
             System.out.println("All the artists: " + artists.findAll());
             System.out.println("All the genres:" + genres.findAll());
-            Database.getConnection().close();
+            ConnectionPool.getConnection().close();
         } catch (SQLException e) {
             System.err.println(e);
             Database.rollback();

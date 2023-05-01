@@ -1,7 +1,6 @@
 package org.example;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -23,5 +22,9 @@ public class ConnectionPool {
             e.printStackTrace();
             throw e;
         }
+    }
+
+    public static void rollback() throws SQLException {
+        dataSource.getConnection().rollback();
     }
 }
