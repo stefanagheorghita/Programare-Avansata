@@ -3,7 +3,7 @@ package org.example;
 import javax.persistence.Persistence;
 
 public class EntityManagerFactoryObject {
-    private static final String PERSISTENCE_UNIT_NAME = "persistence";
+    private static final String PERSISTENCE_UNIT_NAME = "ExamplePU";
     private static javax.persistence.EntityManagerFactory entityManagerFactory;
 
     private EntityManagerFactoryObject() {}

@@ -8,6 +8,8 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "Artist.findAll",
                 query = "select e from Artist e order by e.name"),
+        @NamedQuery(name = "Artist.findByName",
+                query = "select e from Artist e where e.name = :name")
 })
 
 public class Artist implements Serializable {
