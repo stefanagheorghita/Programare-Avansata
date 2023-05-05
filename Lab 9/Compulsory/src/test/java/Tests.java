@@ -1,15 +1,19 @@
 import entity.Artist;
+import org.junit.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class Test {
+import static org.junit.Assert.assertEquals;
+
+public class Tests {
 
     public static void main(String[] args) {
-        Test test = new Test();
+        Tests test = new Tests();
         test.testJPA();
     }
+   @Test
     public void testJPA() {
         EntityManagerFactory emf =
                 Persistence.createEntityManagerFactory("ExamplePU");
@@ -24,8 +28,11 @@ public class Test {
                 .getSingleResult();
         a.setName("The Beatles");
         em.getTransaction().commit();
+       assertEquals(a.getName(), "The Beatles");
         em.close();
         emf.close();
+
+
     }
 }
 
