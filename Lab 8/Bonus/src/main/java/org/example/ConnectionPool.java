@@ -1,6 +1,7 @@
 package org.example;
 
 import org.apache.commons.dbcp2.BasicDataSource;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -13,10 +14,12 @@ public class ConnectionPool {
         dataSource.setUsername("root");
         dataSource.setPassword("rootpassword");
         dataSource.setMaxTotal(100);
+        dataSource.setDefaultAutoCommit(false);
     }
 
     public static Connection getConnection() throws SQLException {
         try {
+
             return dataSource.getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -24,7 +27,11 @@ public class ConnectionPool {
         }
     }
 
-    public static void rollback() throws SQLException {
-        dataSource.getConnection().rollback();
+    public static void rollback()  {
+        try {
+            dataSource.getConnection().rollback();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
