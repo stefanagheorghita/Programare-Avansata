@@ -81,7 +81,7 @@ public class ArtistDAO {
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(
                      "select * from artists where id=" + id)) {
-            con.close();
+
             if (rs.next())
                 return new Artist(id, rs.getString(2));
             else

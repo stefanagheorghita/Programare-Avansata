@@ -6,7 +6,7 @@ import org.example.DAO.GenreDAO;
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws SQLException {
         try {
             var artists = new ArtistDAO();
             artists.create("Pink Floyd");
@@ -17,7 +17,7 @@ public class Main {
             genres.create("Soul");
             genres.create("Pop");
             //Database.getConnection().commit();
-            ConnectionPool.getConnection().commit();
+           // ConnectionPool.getConnection().commit();
             var albums = new AlbumDAO();
             albums.create(1979, "The Wall", "Pink Floyd", "Rock");
             albums.create(1982, "Thriller", "Michael Jackson", "Funk,Soul,Pop");
@@ -34,7 +34,8 @@ public class Main {
             ConnectionPool.getConnection().close();
         } catch (SQLException e) {
             System.err.println(e);
-            Database.rollback();
+           // Database.rollback();
+            ConnectionPool.rollback();
         }
     }
 }
