@@ -13,6 +13,7 @@ public class ConnectionPool {
         dataSource.setUsername("root");
         dataSource.setPassword("rootpassword");
         dataSource.setMaxTotal(100);
+        dataSource.setDefaultAutoCommit(false);
     }
 
     public static Connection getConnection() throws SQLException {
