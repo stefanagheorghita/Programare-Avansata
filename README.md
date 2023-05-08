@@ -46,3 +46,8 @@ Lab 8:
 
 Lab 9:
 -[x] Compulsory
+-[x] Homework
+
+
+Lab 10:
+-[x] Compulsory
