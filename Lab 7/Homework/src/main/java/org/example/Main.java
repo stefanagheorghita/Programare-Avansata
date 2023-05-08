@@ -11,7 +11,7 @@ public class Main {
         explore.start();
         Scanner scanner = new Scanner(System.in);
         while (true) {
-
+            if(explore.timekeeperThread.isTimeUp()) break;
             String command = scanner.nextLine();
             String[] words = command.split("\\s+");
             if (words[0].equalsIgnoreCase("p")) {
@@ -38,7 +38,7 @@ public class Main {
             } else {
                 System.out.println("Invalid input. Please try again.");
             }
-            if(!explore.timekeeperThread.isTimeUp()) break;
+
         }
     }
 }

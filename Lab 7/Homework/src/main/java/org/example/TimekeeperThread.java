@@ -29,5 +29,6 @@ public class TimekeeperThread extends Thread {
             } catch (InterruptedException e) {
             }
         }
+        System.exit(0);
     }
 }
