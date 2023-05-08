@@ -1,7 +1,4 @@
 package entity;
-
-import com.sun.xml.bind.v2.model.core.ID;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -100,7 +97,7 @@ public class Album extends AbstractEntity implements Serializable {
             sb.append(genre.getName()).append(",");
         }
         if (sb.length() > 0) {
-            sb.deleteCharAt(sb.length() - 1); // Remove the trailing comma
+            sb.deleteCharAt(sb.length() - 1);
         }
         genreNames = sb.toString();
     }
