@@ -2,6 +2,8 @@ package entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "artists")
@@ -12,11 +14,7 @@ import java.io.Serializable;
                 query = "select e from Artist e where e.name = :name")
 })
 
-public class Artist implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "id")
-    @Column(name = "id")
-    private Integer id;
+public class Artist extends AbstractEntity implements Serializable {
 
     @Column(name = "name")
     private String name;
@@ -35,13 +33,8 @@ public class Artist implements Serializable {
         this.name = name;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    @OneToMany(mappedBy = "artist")
+    private List<Album> albums = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -49,5 +42,12 @@ public class Artist implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Artist{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

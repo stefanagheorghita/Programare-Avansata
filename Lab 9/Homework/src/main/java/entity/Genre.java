@@ -1,17 +1,25 @@
 package entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "genres")
-public class Genre {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "id")
-    @Column(name = "id")
-    private Integer id;
+@NamedQueries({
+        @NamedQuery(name = "Genre.findByName",
+                query = "SELECT g FROM Genre g WHERE g.name = :name")
+})
+public class Genre extends AbstractEntity implements Serializable {
 
     @Column(name = "name")
     private String name;
+
+    @ManyToMany
+    @JoinTable(name = "album_genre", joinColumns = {@JoinColumn(name = "genre_id")}, inverseJoinColumns = {@JoinColumn(name = "album_id")})
+    List<Album> albums = new ArrayList<>();
+
 
     public Genre() {
         this.id = null;
@@ -27,12 +35,26 @@ public class Genre {
         this.name = name;
     }
 
-    public Integer getId() { return id; }
+    public String getName() {
+        return name;
+    }
 
-    public void setId(Integer id) { this.id = id; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getName() { return name; }
+    public List<Album> getAlbums() {
+        return albums;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setAlbums(List<Album> albums) {
+        this.albums = albums;
+    }
 
+    @Override
+    public String toString() {
+        return "Genre{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

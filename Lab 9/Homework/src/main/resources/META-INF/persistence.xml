@@ -7,6 +7,7 @@
         <class>com.example.entity.Artist</class>
         <class>entity.Album</class>
         <class>entity.Genre</class>
+        <class>entity.AlbumToGenres</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/sys" />

@@ -3,6 +3,9 @@
   <component name="PersistenceUnitSettings">
     <persistence-units>
       <persistence-unit name="persistence">
+        <properties>
+          <property name="hibernate.jdbc.batch_size" value="10"/>
+        </properties>
         <packages>
           <package value="" />
         </packages>

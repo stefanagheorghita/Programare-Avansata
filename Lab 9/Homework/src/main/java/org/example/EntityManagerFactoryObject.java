@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.persistence.Persistence;
+import java.util.Properties;
 
 public class EntityManagerFactoryObject {
     private static final String PERSISTENCE_UNIT_NAME = "ExamplePU";
@@ -14,4 +15,5 @@ public class EntityManagerFactoryObject {
         }
         return entityManagerFactory;
     }
+
 }
