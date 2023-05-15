@@ -3,10 +3,15 @@ package org.game;
 public class Player {
     private String name;
     private char symbol;
+    static int x=1;
+
+    private String id;
 
 
     public Player(String name) {
         this.name = name;
+        id=String.valueOf("player"+x);
+        x++;
     }
 
     public Player(String name, char symbol) {

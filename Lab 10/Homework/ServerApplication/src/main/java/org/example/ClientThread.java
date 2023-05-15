@@ -3,6 +3,7 @@ package org.example;
 import org.game.Game;
 import org.game.Player;
 
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -47,18 +48,30 @@ public class ClientThread extends Thread {
                     out.println("Game started");
                     play(game);
                 } else if (inputLine.equals("join game")) {
-                    System.out.println("Joined game");
-                    Game game = gameServer.joinGame(player);
-                    System.out.println("Joined game");
-                    out.println("Joined game");
-                    while (!game.isStart())
-                        try {
-                            Thread.sleep(1000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
+                    List<Game> games = gameServer.getAvailableGames();
+                    if (games.size() == 0) {
+                        out.println("No available games");
+                    } else {
+                        out.println("Available games: " + games + " Choose a game to join");
+                        String gameName = in.readLine();
+                        Game game = gameServer.joinGame(player, gameName);
+                        if (game == null) {
+                            out.println("Invalid game name");
+                        } else {
+                            out.println("Joined game");
+                            while (!game.isStart())
+                                try {
+                                    Thread.sleep(1000);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            out.println("Game started");
+                            play(game);
                         }
-                    out.println("Game started");
-                    play(game);
+
+                    }
+
+
                 } else if (inputLine.equals("stop")) {
                     out.println("Server stopped");
                     break;
@@ -122,10 +135,10 @@ public class ClientThread extends Thread {
                                     valid = true;
                                     out.println("Move submitted");
                                 } else
-                                    out.println("Invalid move");
+                                    out.println("Invalid move.Try again.");
                             }
                         } catch (NumberFormatException e) {
-                            out.println("Invalid move");
+                            out.println("Invalid move.Try again.");
                         }
 
                     }
@@ -189,7 +202,7 @@ public class ClientThread extends Thread {
             out.println("Enter your name: ");
             String name = in.readLine();
             player = new Player(name);
-            out.println("Welcome " + name+"!");
+            out.println("Welcome " + name + "!");
         } catch (IOException e) {
         }
     }

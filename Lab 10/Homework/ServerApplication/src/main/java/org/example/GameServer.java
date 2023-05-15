@@ -27,7 +27,7 @@ public class GameServer {
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Client connected: " + clientSocket.getInetAddress().getHostAddress());
-                ClientThread clientThread = new ClientThread(clientSocket,this);
+                ClientThread clientThread = new ClientThread(clientSocket, this);
                 clientThread.start();
             }
         } catch (IOException e) {
@@ -39,22 +39,30 @@ public class GameServer {
 
     public synchronized Game createGame(Player player) {
         Game newGame = new Game(10);
-        newGame.setPlayers(0,player);
+        newGame.setPlayers(0, player);
         games.add(newGame);
         return newGame;
     }
 
-    public synchronized Game joinGame(Player player) {
+    public synchronized Game joinGame(Player player, String gameName) {
+
         for (Game game : games) {
-            if (!game.hasSetPlayers()) {
-                game.setPlayers(1,player);
+            if (game.getId().equals(gameName)) {
+                game.setPlayers(1, player);
                 game.start();
                 return game;
             }
         }
-        Game newGame = new Game(10);
-        newGame.setPlayers(0,player);
-        games.add(newGame);
-        return newGame;
+        return null;
+    }
+
+    public synchronized List<Game> getAvailableGames() {
+        List<Game> availableGames = new ArrayList<>();
+        for (Game game : games) {
+            if (!game.hasSetPlayers()) {
+                availableGames.add(game);
+            }
+        }
+        return availableGames;
     }
 }

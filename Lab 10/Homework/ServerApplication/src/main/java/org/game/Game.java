@@ -2,7 +2,10 @@ package org.game;
 
 import org.example.GameTimer;
 
+
 public class Game {
+
+    static int x=1;
     private Board board;
     private Player[] players = new Player[2];
     private int currentPlayerIndex;
@@ -19,19 +22,27 @@ public class Game {
 
     private int[] timeLeft = new int[2];
 
+    private String id;
+
 
     public Game(int boardSize) {
+        id= String.valueOf("game"+ x);
         this.board = new Board(boardSize);
         this.currentPlayerIndex = 0;
+        x++;
     }
 
-    public Game(int boardSize, Player player1, Player player2) {
-        this.board = new Board(boardSize);
-        this.players = new Player[]{player1, player2};
-        this.currentPlayerIndex = 0;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public boolean makeMove(int row, int col) {
+        if(row < 0 || row >= board.getSize() || col < 0 || col >= board.getSize())
+            return false;
         if (board.isValid(row, col)) {
             Player currentPlayer = players[currentPlayerIndex];
             board.placeMove(row, col, currentPlayer.getSymbol());
@@ -59,10 +70,11 @@ public class Game {
         start = true;
         timers[0] = new GameTimer(1);
         timers[1] = new GameTimer(1);
-        timeLeft[0] = 10;
-        timeLeft[1] = 10;
+        timeLeft[0] = 60;
+        timeLeft[1] = 60;
         timers[0].startTimer(() -> {
             if (currentPlayerIndex == 0) {
+                System.out.println("Time left for player 1: " + timeLeft[0]);
                 timeLeft[0]--;
                 if (timeLeft[0] <= 0) {
                     handlePlayerTimeout(0);
@@ -70,6 +82,7 @@ public class Game {
             }
         });
         timers[1].startTimer(() -> {
+            System.out.println("Time left for player 2: " + timeLeft[1]);
             if (currentPlayerIndex == 1) {
                 timeLeft[1]--;
                 if (timeLeft[1] <= 0) {
@@ -84,6 +97,10 @@ public class Game {
     private void handlePlayerTimeout(int index) {
         winnerIndex = (index + 1) % 2;
         done = true;
+        timers[0].stopTimer();
+        timers[1].stopTimer();
+        currentPlayerIndex = (index + 1) % 2;
+        //Thread.currentThread().interrupt();
     }
 
     public boolean isStart() {
@@ -139,5 +156,10 @@ public class Game {
         this.err = err;
     }
 
-
+    @Override
+    public String toString() {
+        return "Game{" +
+                "id='" + id + '\'' +
+                '}';
+    }
 }

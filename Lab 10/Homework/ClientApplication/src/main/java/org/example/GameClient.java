@@ -1,6 +1,5 @@
 package org.example;
 
-import org.ui.MainFrame;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -59,8 +58,19 @@ public class GameClient {
                     System.out.println(response);
                     if (response.equals("Game started"))
                         play();
-                } else if (response.equals("Joined game")) {
-                    System.out.println("Joining a game...");
+                } else if (response.startsWith("Available games:")||response.startsWith("No available games")) {
+                    if (response.equals("No available games.")) {
+                        continue;
+                    }
+                    String gameName = keyboardInput.readLine();
+                    System.out.println("You chose game " + gameName+".");
+                    out.println(gameName);
+                    String verify = in.readLine();
+                    System.out.println(verify);
+                    if (verify.equals("Invalid game name")) {
+                        continue;
+                    }
+
                     response = in.readLine();
                     System.out.println(response);
                     if (response.equals("Game started"))
@@ -89,32 +99,47 @@ public class GameClient {
                 break;
             }
             if (response.startsWith("It's your turn.")) {
-                System.out.println("Row: ");
-                int row = Integer.parseInt(keyboardInput.readLine());
-                System.out.println("You chose row " + row);
-                //out.println(row);
-                System.out.println("Column: ");
-                int col = Integer.parseInt(keyboardInput.readLine());
-                System.out.println("You chose column " + col);
-                System.out.println("Insert 'submit move' to send the coordinates.");
-                // out.println(col);
-                String send = keyboardInput.readLine();
-                while (!send.equals("submit move")) {
-                    System.out.println("Try again. Choose a row and a column.");
-                    System.out.println("Row: ");
-                    row = Integer.parseInt(keyboardInput.readLine());
-                    System.out.println("You chose row " + row);
-                    System.out.println("Column: ");
-                    col = Integer.parseInt(keyboardInput.readLine());
-                    System.out.println("You chose column " + col);
-                    System.out.println("Insert 'submit move' to send the coordinates.");
-                    send = keyboardInput.readLine();
-                }
-                out.println(row);
-                out.println(col);
-                out.println(send);
-            }
+                do {
+                    try {
 
+                        System.out.println("Row: ");
+                        int row = Integer.parseInt(keyboardInput.readLine());
+                        System.out.println("You chose row " + row);
+                        //out.println(row);
+                        System.out.println("Column: ");
+                        int col = Integer.parseInt(keyboardInput.readLine());
+                        System.out.println("You chose column " + col);
+                        System.out.println("Insert 'submit move' to send the coordinates.");
+                        // out.println(col);
+                        String send = keyboardInput.readLine();
+                        while (!send.equals("submit move")) {
+
+                            System.out.println("Try again. Choose a row and a column.");
+                            System.out.println("Row: ");
+                            row = Integer.parseInt(keyboardInput.readLine());
+                            System.out.println("You chose row " + row);
+                            System.out.println("Column: ");
+                            col = Integer.parseInt(keyboardInput.readLine());
+                            System.out.println("You chose column " + col);
+                            System.out.println("Insert 'submit move' to send the coordinates.");
+                            send = keyboardInput.readLine();
+
+                        }
+                        out.println(row);
+                        out.println(col);
+                        out.println(send);
+                        response = in.readLine();
+                        System.out.println(response);
+                        if (response.equals("Game ended!")) {
+                            break;
+                        }
+                    } catch (NumberFormatException e) {
+                        response = "Invalid move.Try again.";
+                        System.out.println(response);
+                    }
+                } while (response.equals("Invalid move.Try again."));
+
+            }
         }
         String finalResponse = in.readLine();
         System.out.println(finalResponse);
