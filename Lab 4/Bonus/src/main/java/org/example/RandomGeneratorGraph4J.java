@@ -41,7 +41,7 @@ public class RandomGeneratorGraph4J {
             List<Project> pref = new ArrayList<>();
             for (Edge e : graph.edges()) {
                 if (e.source() == studentList.indexOf(s))
-                    pref.add(projects.get(e.target()-799));
+                    pref.add(projects.get(e.target()-800));
             }
             pb.newKey(s, pref);
         }

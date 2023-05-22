@@ -27,7 +27,6 @@ public class RandomGeneratorJGraphT {
 
         double edgeProbability = 0.3;
 
-        // Create the two sets of vertices
         Set<Student> students = new HashSet<>();
         Set<Project> projects = new HashSet<>();
         for (int i = 0; i < numStudents; i++) {
@@ -41,7 +40,6 @@ public class RandomGeneratorJGraphT {
             graph.addVertex(p);
         }
 
-        // Generate the bipartite graph
         graph = new DefaultUndirectedGraph<>(new NodeSupplier(students,projects), SupplierUtil.createDefaultEdgeSupplier(), false);
         GnpRandomBipartiteGraphGenerator<Node, DefaultEdge> generator = new GnpRandomBipartiteGraphGenerator<>(numStudents, numProjects, edgeProbability);
         generator.generateGraph(graph);

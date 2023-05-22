@@ -116,7 +116,7 @@ public class Main {
         initialTime = System.currentTimeMillis();
 
         RandomGeneratorJGraphT rd = new RandomGeneratorJGraphT();
-        rd.createProblem();
+       // rd.createProblem();
         runningTime = System.currentTimeMillis() - initialTime;
         usedMemoryAfter =
                 runtime.totalMemory() - runtime.freeMemory();
