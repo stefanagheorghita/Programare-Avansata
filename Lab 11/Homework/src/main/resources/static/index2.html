@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Games</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/games')
+            .then(response => response.json())
+            .then(data => {
+                const gameList = document.getElementById('game-list');
+                data.forEach(game => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `ID: ${game.id}, Name: ${game.gameId}`;
+                    gameList.appendChild(listItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while fetching the games list.');
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Games List</h1>
+<ul id="game-list"></ul>
+</body>
+</html>

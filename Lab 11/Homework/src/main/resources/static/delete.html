@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Player</title>
+</head>
+<body>
+<h1>Delete Player</h1>
+
+<form id="deleteForm">
+    <label for="playerId">Player ID:</label>
+    <input type="text" id="playerId" name="playerId" required>
+    <br>
+    <input type="submit" value="Delete">
+</form>
+
+<script>
+        document.getElementById("deleteForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var playerId = document.getElementById("playerId").value;
+            deletePlayer(playerId);
+        });
+
+        function deletePlayer(playerId) {
+            fetch("/players/" + playerId, {
+                method: "DELETE"
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    alert("Player deleted successfully");
+                } else if (response.status === 404) {
+                    alert("Player not found with ID: " + playerId);
+                } else {
+                    alert("Failed to delete player");
+                }
+            })
+            .catch(function(error) {
+                console.log(error);
+                alert("An error occurred");
+            });
+        }
+    </script>
+</body>
+</html>

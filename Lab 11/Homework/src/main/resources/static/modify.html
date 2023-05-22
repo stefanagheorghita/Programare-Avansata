@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify Player</title>
+    <script>
+        function modifyPlayer() {
+            const playerIdInput = document.getElementById('player-id-input');
+            const nameInput = document.getElementById('name-input');
+            const playerId = playerIdInput.value;
+            const name = nameInput.value;
+
+            if (playerId && name) {
+                const player = {
+                    name: name
+                };
+
+                fetch(`/players/${playerId}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(player)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Player modified successfully');
+                    } else {
+                        alert('Failed to modify player');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            } else {
+                alert('Invalid input');
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Modify Player</h1>
+<label for="player-id-input">Player ID:</label>
+<input type="text" id="player-id-input"><br><br>
+<label for="name-input">New Name:</label>
+<input type="text" id="name-input"><br><br>
+<button onclick="modifyPlayer()">Modify</button>
+</body>
+</html>

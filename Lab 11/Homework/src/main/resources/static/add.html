@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Player</title>
+    <script>
+        function addPlayer() {
+            const nameInput = document.getElementById('name-input');
+            const name = nameInput.value;
+
+            if (name) {
+                const player = {
+                    name: name
+                };
+
+                fetch('/players', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(player)
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert(data);
+                    nameInput.value = '';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while adding the player.');
+                });
+            } else {
+                alert('Please enter a name');
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Add Player</h1>
+<label for="name-input">Name:</label>
+<input type="text" id="name-input">
+<button onclick="addPlayer()">Add</button>
+</body>
+</html>
