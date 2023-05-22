@@ -55,3 +55,7 @@ Lab 10:
 
 Lab 11:
 -[x] Compulsory
+-[x] Homework
+
+Lab 12:
+-[x] Compulsory
