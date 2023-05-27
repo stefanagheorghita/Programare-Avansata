@@ -1,0 +1,16 @@
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\out\artifacts\Compulsory_jar\Compulsory.jar
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 10\Compulsory\ClientApplication\src\main\java\org\example
+
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\target\classes\org\example
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\src\main\java\org\example
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\src\main\java\org\example\TestClass.java
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\target\classes\org\example\TestClass.class
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\src\main\java\org\example\Analyzer.java
+
+C:\Users\user\Documents\AN2 SEM 2\PA\Lab 12\Homework\src\main\java\org\example\pack\Clasa.java
