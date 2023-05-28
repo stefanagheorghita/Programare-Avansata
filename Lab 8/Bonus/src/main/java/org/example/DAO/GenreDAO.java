@@ -17,6 +17,7 @@ public class GenreDAO {
                 "insert into genres (name) values (?)")) {
             pstmt.setString(1, name);
             pstmt.executeUpdate();
+            con.commit();
         }
         con.close();
     }

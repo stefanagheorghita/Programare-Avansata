@@ -24,10 +24,12 @@ public class AlbumDAO {
             pstmt.setString(3, artist);
             pstmt.setString(4, genre);
             pstmt.executeUpdate();
+            con.commit();
         }
         ArtistDAO artistDAO = new ArtistDAO();
         if (artistDAO.findByName(artist) == null) {
             artistDAO.create(artist);
+
         }
         GenreDAO genreDAO = new GenreDAO();
         AlbumToGenreDAO albumToGenreDAO = new AlbumToGenreDAO();
@@ -35,6 +37,7 @@ public class AlbumDAO {
         for (String genreName : genres) {
             if (genreDAO.findByName(genreName) == null) {
                 genreDAO.create(genreName);
+
                 albumToGenreDAO.create(findByTitleArtistYear(title, artist, year), genreDAO.findByName(genreName).getId());
             }
         }

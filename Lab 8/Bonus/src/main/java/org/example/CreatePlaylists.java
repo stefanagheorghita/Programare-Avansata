@@ -18,6 +18,7 @@ public class CreatePlaylists {
 
             var albumDAO = new AlbumDAO();
             albums.addAll(albumDAO.findAll());
+            System.out.println("All the albums: " + albums);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
