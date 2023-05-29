@@ -45,11 +45,13 @@ public class Graph {
         VertexList vertexList = new VertexList(graph);
         while (solving.hasNext()) {
             System.out.println("Next playlist: ");
-            try {
-                playlistDAO.create("Playlist" + i++,solving.next().toString());
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+            System.out.println(solving.next());
+//            try {
+//
+//                playlistDAO.create("Playlist" + i++,solving.next().toString());
+//            } catch (SQLException e) {
+//                throw new RuntimeException(e);
+//            }
 
             System.out.println("--------------------------------------------------");
         }
