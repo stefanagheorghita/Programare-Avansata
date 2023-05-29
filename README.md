@@ -47,7 +47,7 @@ Lab 8:
 Lab 9:
 -[x] Compulsory
 -[x] Homework
-
+-[x] Bonus
 
 Lab 10:
 -[x] Compulsory
@@ -58,4 +58,9 @@ Lab 11:
 -[x] Homework
 
 Lab 12:
+-[x] Compulsory
+-[x] Homework
+-[x] Bonus
+
+Lab 13:
 -[x] Compulsory
