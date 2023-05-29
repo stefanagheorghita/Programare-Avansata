@@ -1,5 +1,6 @@
 package org.example;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.objectweb.asm.*;
 
@@ -145,6 +146,8 @@ public class Analyzer {
     private static List<Method> getTestMethods(Class<?> clasa) {
         int staticTestMethods = 0;
         int nonStaticTestMethods = 0;
+        int goodTestMethods=0;
+        int badTestMethods=0;
         List<Method> testMethods = new ArrayList<>();
         Method[] methods = clasa.getDeclaredMethods();
         for (Method method : methods) {
@@ -157,8 +160,11 @@ public class Analyzer {
 
                 try {
                     invokeTestMethod(method);
+                    goodTestMethods++;
                 } catch (ReflectiveOperationException e) {
-                    throw new RuntimeException(e);
+                    badTestMethods++;
+                    //throw new RuntimeException(e);
+                    System.out.println("Error at invoking method.");
                 }
                 testMethods.add(method);
 
@@ -168,6 +174,8 @@ public class Analyzer {
         System.out.println("Total test methods: " + testMethods.size());
         System.out.println("Static test methods: " + staticTestMethods);
         System.out.println("Non-static test methods: " + nonStaticTestMethods);
+        System.out.println("Passed test methods: "+ goodTestMethods);
+        System.out.println("Failed test methods "+badTestMethods);
         System.out.println("------");
         return testMethods;
     }
