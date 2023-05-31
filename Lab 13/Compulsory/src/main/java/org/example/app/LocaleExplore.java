@@ -46,8 +46,13 @@ public class LocaleExplore {
 
 
             } else if (command.startsWith("info")) {
+                if(command.equals("info"))
+                    Info.execute(currentLocale);
+                else{
+                    String[] parts = command.split(" ");
+                    Info.execute(parts[1]);
+                }
 
-                Info.execute(currentLocale);
             } else if (command.equals("exit")) {
                 break;
             } else {
